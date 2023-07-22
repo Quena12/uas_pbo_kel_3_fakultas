@@ -4,6 +4,8 @@ namespace App\Database\Migrations;
 
 use CodeIgniter\Database\Migration;
 
+use function PHPSTORM_META\type;
+
 class CreateFakultasTable extends Migration
 {
     public function up()
@@ -14,13 +16,17 @@ class CreateFakultasTable extends Migration
                 'unsigned' => true,
                 'auto_increment' => true,
             ],
+            'kd_fakultas' => [
+                'type' => 'VARCHAR',
+                'constraint' => 255,
+            ],
             'nama' => [
                 'type' => 'VARCHAR',
                 'constraint' => 100,
             ],
         ]);
 
-        $this->forge->addPrimaryKey('id', true);
+        $this->forge->addKey('id', true);
         $this->forge->createTable('fakultas', true);
     }
 

@@ -6,18 +6,18 @@ use App\Models\FakultasModel;
 
 class Fakultas extends BaseController
 {
+
+    protected $model;
+    function __construct()
+    {
+        $this->model = new FakultasModel();
+    }
+
+
     public function index()
     {
-        $fakultasModel = new FakultasModel();
-        $fakultas['fakultas'] = $fakultasModel->findAll();
-
-        // return json_encode (
-        //     array(
-        //         "fakultas" =>$fakultas['fakultas']
-        //     )
-        //     );
-
-        return view('index', $fakultas);
+        $fakultas['fakultas'] = $this->model->findAll();
+        return view('fakultas/index', $fakultas);
     }
 
     // public function getJson()
@@ -30,28 +30,25 @@ class Fakultas extends BaseController
 
     public function create()
     {
-        return view('fakultas/create');
-    }
 
-    public function store()
-    {
-        $fakultasModel = new FakultasModel();
+        $newKodeFakultas = $this->model->generateKodeFakultas();
 
-        $data = [
+        $this->model->insert([
             'nama' => $this->request->getPost('nama'),
-        ];
-
-        $fakultasModel->insert($data);
+            'kd_fakultas' => $newKodeFakultas
+        ]);
 
         return redirect()->to('/fakultas');
     }
 
+
+
     public function edit($id)
     {
-        $fakultasModel = new FakultasModel();
-        $fakultas = $fakultasModel->find($id);
 
-        return view('fakultas/edit', ['fakultas' => $fakultas]);
+        $data['fakultas'] = $this->model->find($id);
+
+        return view('fakultas/edit', $data);
     }
 
     public function update($id)
@@ -69,10 +66,8 @@ class Fakultas extends BaseController
 
     public function delete($id)
     {
-        $fakultasModel = new FakultasModel();
-        $fakultasModel->delete($id);
+        $this->model->delete($id);
 
         return redirect()->to('/fakultas');
     }
 }
-
