@@ -46,6 +46,11 @@ $routes->post('/ruangan/editruangan/(:num)', 'RuanganController::editRuangan/$1'
 $routes->get('/ruangan/deleteruangan/(:num)', 'RuanganController::deleteRuangan/$1');
 // $routes->get('fakultas/json', 'Fakultas::getJson');
 
+//prodi
+$routes->get('/prodi', 'ProdiController::index');
+$routes->post('/prodi/adddprodi', 'ProdiController::create');
+$routes->get('/prodi/deleteprodi/(:num)', 'ProdiController::delete/$1');
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing
