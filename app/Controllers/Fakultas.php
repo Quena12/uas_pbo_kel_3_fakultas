@@ -18,6 +18,11 @@ class Fakultas extends BaseController
     {
         $fakultas['title'] = 'Fakultas';
         $fakultas['fakultas'] = $this->model->findAll();
+        $fakultas['json'] = json_encode(
+            array(
+                'fakultas' => $fakultas['fakultas']
+            )
+        );
         return view('fakultas/index', $fakultas);
     }
 
