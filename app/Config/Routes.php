@@ -49,8 +49,9 @@ $routes->get('/ruangan/deleteruangan/(:num)', 'RuanganController::deleteRuangan/
 //prodi
 $routes->get('/prodi', 'ProdiController::index');
 $routes->post('/prodi/adddprodi', 'ProdiController::create');
+$routes->get('/prodi/editprodi/(:num)', 'ProdiController::editProdi/$1');
+$routes->post('/prodi/editprodi/(:num)', 'ProdiController::editProdi/$1');
 $routes->get('/prodi/deleteprodi/(:num)', 'ProdiController::delete/$1');
-
 /*
  * --------------------------------------------------------------------
  * Additional Routing

@@ -10,6 +10,8 @@ class FakultasModel extends Model
     protected $primaryKey = 'id';
     protected $allowedFields = ['kd_fakultas', 'nama'];
 
+
+
     function countFakultasData()
     {
         return $this->countAllResults();
@@ -30,4 +32,9 @@ class FakultasModel extends Model
 
         return $newKodeFakultas;
     }
+
+    // function getRuangan()
+    // {
+    //     return $this->db->table('fakultas')->join('ruangan', 'ruangan.id_ruangan=fakultas.id_ruangan')->get()->getResultArray();
+    // }
 }
