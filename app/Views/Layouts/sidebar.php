@@ -51,6 +51,12 @@
                         <span>Ruangan</span>
                     </a>
                 </li>
+                <li class="sidebar-item ">
+                    <a href="/prodi" class='sidebar-link'>
+                        <i class="bi bi-grid-fill"></i>
+                        <span>Program Studi</span>
+                    </a>
+                </li>
             </ul>
         </div>
     </div>

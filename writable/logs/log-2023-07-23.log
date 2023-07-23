@@ -80,3 +80,55 @@ in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
  6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
  8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ERROR - 2023-07-23 07:13:57 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'fakultas', 3306, '', 0)
+#1 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Controllers\Home.php(18): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#8 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMM...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Controllers\Home.php(18): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#7 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMM...')
+#11 {main}
+CRITICAL - 2023-07-23 07:13:57 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `fakultas`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Home.php(18): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+CRITICAL - 2023-07-23 08:03:12 --> Call to undefined method App\Models\ProdiModel::countRuanganData
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\Home.php(25): CodeIgniter\Model->__call('countRuanganData', [])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')

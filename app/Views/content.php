@@ -36,6 +36,23 @@
                                     </div>
                                 </div>
                                 <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
+                                    <h6 class="text-muted font-semibold">Prodi</h6>
+                                    <h6 class="font-extrabold mb-0"><?= $totalProdi ?></h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="card-body px-4 py-4-5">
+                            <div class="row">
+                                <div class="col-md-4 col-lg-12 col-xl-12 col-xxl-5 d-flex justify-content-start ">
+                                    <div class="stats-icon blue mb-2">
+                                        <i class="iconly-boldProfile"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
                                     <h6 class="text-muted font-semibold">Ruangan</h6>
                                     <h6 class="font-extrabold mb-0"><?= $totalRuangan ?></h6>
                                 </div>
@@ -102,6 +119,39 @@
                                                 <td><?= $no++ ?> </td>
                                                 <td><?= $ruangan['kd_ruangan'] ?> </td>
                                                 <td><?= $ruangan['nama_ruangan'] ?> </td>
+                                            </tr>
+                                        </tbody>
+                                    <?php endforeach; ?>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="table-head">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">Program Studi</h4>
+                        </div>
+                        <div class="card-content">
+                            <!-- table head dark -->
+                            <div class="table-responsive">
+                                <table class="table mb-0">
+                                    <thead class="thead-dark">
+                                        <tr>
+                                            <th>NO</th>
+                                            <th>KODE PRODI</th>
+                                            <th>NAMA PRODI</th>
+                                        </tr>
+                                    </thead>
+                                    <?php $no = 1 ?>
+                                    <?php foreach ($prodi as $prodi) : ?>
+                                        <tbody>
+                                            <tr>
+                                                <td><?= $no++ ?> </td>
+                                                <td><?= $prodi['kd_prodi'] ?> </td>
+                                                <td><?= $prodi['nama_prodi'] ?> </td>
                                             </tr>
                                         </tbody>
                                     <?php endforeach; ?>
