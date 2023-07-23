@@ -16,6 +16,7 @@ class Fakultas extends BaseController
 
     public function index()
     {
+        $fakultas['title'] = 'Fakultas';
         $fakultas['fakultas'] = $this->model->findAll();
         return view('fakultas/index', $fakultas);
     }
@@ -45,7 +46,7 @@ class Fakultas extends BaseController
 
     public function edit($id)
     {
-
+        $data['title'] = "Edit Fakultas";
         $data['fakultas'] = $this->model->find($id);
 
         return view('fakultas/edit', $data);

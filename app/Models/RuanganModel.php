@@ -10,6 +10,11 @@ class RuanganModel extends Model
     protected $primaryKey = 'id_ruangan';
     protected $allowedFields  = ['kd_ruangan', 'nama_ruangan'];
 
+    function countRuanganData()
+    {
+        return $this->countAllResults();
+    }
+
     function generateKodeRuangan()
     {
         $lastKode = $this->orderBy('id_ruangan', 'DESC')->first();

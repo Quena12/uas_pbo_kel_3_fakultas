@@ -10,6 +10,11 @@ class FakultasModel extends Model
     protected $primaryKey = 'id';
     protected $allowedFields = ['kd_fakultas', 'nama'];
 
+    function countFakultasData()
+    {
+        return $this->countAllResults();
+    }
+
     function generateKodeFakultas()
     {
         $lastKode = $this->orderBy('id', 'DESC')->first();

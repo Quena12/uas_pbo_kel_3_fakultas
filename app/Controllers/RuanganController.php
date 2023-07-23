@@ -19,6 +19,7 @@ class RuanganController extends BaseController
 
     public function index()
     {
+        $data['title'] = 'Ruangan';
         $data['dataRuangan'] = $this->model->orderBy('id_ruangan', 'asc')->findAll();
         return view('ruangan/ruangan_view', $data);
     }
@@ -41,6 +42,7 @@ class RuanganController extends BaseController
     public function editRuangan($id_ruangan)
     {
         // Mengambil data ruangan yang akan diedit dari database
+        $data['title'] = "Edit Ruangan";
         $data['ruangan'] = $this->model->find($id_ruangan);
 
         // Validasi data yang dikirimkan dari form
@@ -73,7 +75,7 @@ class RuanganController extends BaseController
 
 
         // Tampilkan halaman edit ruangan dengan data yang ada
-        echo view('edit_ruangan', $data);
+        echo view('ruangan/edit', $data);
     }
 
     function deleteRuangan($id_ruangan)
