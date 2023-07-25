@@ -47,6 +47,7 @@
             <div class="card">
                 <div class="card-header">
                     <h4 class="card-title">List Fakultas</h4>
+                    <p><?= $json ?></p>
                 </div>
                 <div class="card-content">
 

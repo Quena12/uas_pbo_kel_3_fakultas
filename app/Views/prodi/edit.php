@@ -3,19 +3,19 @@
 <?= $this->section('content') ?>
 
 <div class="container">
-    <h2>Edit Ruangan</h2>
-    <form action="/ruangan/editruangan/<?= $ruangan['id_ruangan'] ?>" method="post">
-        <input type="hidden" name="id_ruangan" value="<?= $ruangan['id_ruangan'] ?>">
+    <h2>Edit Program Studi</h2>
+    <form action="/prodi/editprodi/<?= $prodi['id_prodi'] ?>" method="post">
+        <input type="hidden" name="id_prodi" value="<?= $prodi['id_prodi'] ?>">
         <div class="form-group">
-            <label for="kd_ruangan">Kode Ruangan</label>
-            <input type="text" class="form-control" name="kd_ruangan" placeholder="Kode Ruangan" value="<?= $ruangan['kd_ruangan'] ?>" readonly>
+            <label for="kd_prodi">Kode Prodi</label>
+            <input type="text" class="form-control" name="kd_prodi" placeholder="Kode Prodi" value="<?= $prodi['kd_prodi'] ?>" readonly>
         </div>
         <div class="form-group">
-            <label for="nama_ruangan">Nama Ruangan</label>
-            <input type="text" class="form-control" name="nama_ruangan" placeholder="Nama Ruangan" value="<?= $ruangan['nama_ruangan'] ?>">
+            <label for="nama_prodi">Nama Prodi</label>
+            <input type="text" class="form-control" name="nama_prodi" placeholder="Nama Prodi" value="<?= $prodi['nama_prodi'] ?>">
         </div>
         <div class="form-group">
-            <a href="/ruangan" class="btn btn-secondary">Batal</a>
+            <a href="/prodi" class="btn btn-secondary">Batal</a>
             <button type="submit" class="btn btn-success">Simpan</button>
 
         </div>

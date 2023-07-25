@@ -1,7 +1,6 @@
 <?= $this->extend('Layouts/indexView') ?>
 
 <?= $this->section('content') ?>
-
 <div class="container">
     <h2>Edit Ruangan</h2>
     <form action="/ruangan/editruangan/<?= $ruangan['id_ruangan'] ?>" method="post">
