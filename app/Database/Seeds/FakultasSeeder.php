@@ -9,11 +9,8 @@ class FakultasSeeder extends Seeder
     public function run()
     {
         $data = [
-            ['nama' => 'Fakultas Industri Halal'],
-            ['nama' => 'Fakultas Teknologi Informasi'],
-            ['nama' => 'Fakultas Dirasah Islamiyah'],
-            ['nama' => 'Fakultas Ekonomi'],
-            ['nama' => 'Fakultas Pendidikan'],
+            ['nama_fakultas' => 'Fakultas Industri Halal'],
+            ['id_ruangan' => 1],
         ];
 
         $this->db->table('fakultas')->insertBatch($data);

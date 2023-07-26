@@ -3,21 +3,48 @@
 namespace App\Controllers;
 
 use App\Models\FakultasModel;
+use App\Models\RuanganModel;
 
 class Fakultas extends BaseController
 {
+    protected $fakultasModel;
+
+    function __construct()
+    {
+        $this->fakultasModel = new FakultasModel();
+    }
+
+
     public function index()
     {
-        $fakultasModel = new FakultasModel();
-        $fakultas['fakultas'] = $fakultasModel->findAll();
 
-        // return json_encode (
-        //     array(
-        //         "fakultas" =>$fakultas['fakultas']
-        //     )
-        //     );
+        //get Ruangan Data
+        $ruanganModel = new RuanganModel();
+        $fakultas['ruangan'] = $ruanganModel->findAll();
 
-        return view('index', $fakultas);
+        //get All Data
+        $fakultas['title'] = 'Fakultas';
+        $fakultas['fakultas'] = $this->fakultasModel->getData();
+        $fakultas['json'] = json_encode(
+            array(
+                'fakultas' => $fakultas['fakultas']
+            )
+        );
+        return view('fakultas/index', $fakultas);
+    }
+
+    function createNewFakultas()
+    {
+
+        $fakultas['fakultas'] = $this->fakultasModel->getData();
+        $newKodeFakultas = $this->fakultasModel->generateKodeFakultas();
+        $data = [
+            'nama_fakultas' => $this->request->getPost('nama_fakultas'),
+            'kd_fakultas' => $newKodeFakultas,
+            'id_ruangan' => $this->request->getPost('id_ruangan')
+        ];
+        $this->fakultasModel->insert($data);
+        return redirect()->to('/fakultas');
     }
 
     // public function getJson()
@@ -30,49 +57,42 @@ class Fakultas extends BaseController
 
     public function create()
     {
-        return view('fakultas/create');
-    }
+        $newKodeFakultas = $this->fakultasModel->generateKodeFakultas();
 
-    public function store()
-    {
-        $fakultasModel = new FakultasModel();
-
-        $data = [
+        $this->fakultasModel->insert([
             'nama' => $this->request->getPost('nama'),
-        ];
-
-        $fakultasModel->insert($data);
+            'kd_fakultas' => $newKodeFakultas
+        ]);
 
         return redirect()->to('/fakultas');
     }
 
+
+
     public function edit($id)
     {
-        $fakultasModel = new FakultasModel();
-        $fakultas = $fakultasModel->find($id);
+        $data['title'] = "Edit Fakultas";
+        $data['fakultas'] = $this->fakultasModel->find($id);
 
-        return view('fakultas/edit', ['fakultas' => $fakultas]);
+        return view('fakultas/edit', $data);
     }
 
     public function update($id)
     {
-        $fakultasModel = new FakultasModel();
 
         $data = [
             'nama' => $this->request->getPost('nama'),
         ];
 
-        $fakultasModel->update($id, $data);
+        $this->fakultasModel->update($id, $data);
 
         return redirect()->to('/fakultas');
     }
 
     public function delete($id)
     {
-        $fakultasModel = new FakultasModel();
-        $fakultasModel->delete($id);
+        $this->fakultasModel->delete($id);
 
         return redirect()->to('/fakultas');
     }
 }
-

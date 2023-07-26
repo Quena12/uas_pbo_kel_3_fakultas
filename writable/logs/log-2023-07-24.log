@@ -1,0 +1,40 @@
+CRITICAL - 2023-07-24 21:04:29 --> Call to undefined method App\Models\FakultasModel::with
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\Fakultas.php(22): CodeIgniter\Model->__call('with', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Fakultas->index()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fakultas))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+CRITICAL - 2023-07-24 21:05:39 --> Call to undefined method App\Models\FakultasModel::with
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\Fakultas.php(22): CodeIgniter\Model->__call('with', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Fakultas->index()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fakultas))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+CRITICAL - 2023-07-24 21:05:41 --> Call to undefined method App\Models\FakultasModel::with
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\Fakultas.php(22): CodeIgniter\Model->__call('with', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Fakultas->index()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fakultas))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+CRITICAL - 2023-07-24 21:05:43 --> Call to undefined method App\Models\FakultasModel::with
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\Fakultas.php(22): CodeIgniter\Model->__call('with', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Fakultas->index()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fakultas))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+CRITICAL - 2023-07-24 21:05:47 --> Call to undefined method App\Models\FakultasModel::with
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\Fakultas.php(22): CodeIgniter\Model->__call('with', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Fakultas->index()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fakultas))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
