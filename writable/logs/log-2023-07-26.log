@@ -826,3 +826,108 @@ in APPPATH\Views\fakultas\index.php on line 37.
  8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
 10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ERROR - 2023-07-26 17:24:19 --> mysqli_sql_exception: Unknown column 'fakultas.id_fakultas' in 'field list' in C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `fakulta...', 0)
+#1 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `fakulta...')
+#2 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fakulta...')
+#3 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `fakulta...', Array, false)
+#4 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Models\FakultasModel.php(37): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Controllers\Fakultas.php(27): App\Models\FakultasModel->getData()
+#6 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Fakultas->index()
+#7 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fakultas))
+#8 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\62823\\...')
+#11 {main}
+CRITICAL - 2023-07-26 17:24:19 --> Unknown column 'fakultas.id_fakultas' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`', [], false)
+ 5 APPPATH\Models\FakultasModel.php(37): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Fakultas.php(27): App\Models\FakultasModel->getData()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Fakultas->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fakultas))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\62823\\OneDrive\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ERROR - 2023-07-26 17:25:14 --> mysqli_sql_exception: Unknown column 'fakultas.id_fakultas' in 'field list' in C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `fakulta...', 0)
+#1 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `fakulta...')
+#2 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fakulta...')
+#3 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `fakulta...', Array, false)
+#4 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Models\FakultasModel.php(37): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+#6 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#7 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\62823\\...')
+#11 {main}
+CRITICAL - 2023-07-26 17:25:14 --> Unknown column 'fakultas.id_fakultas' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`', [], false)
+ 5 APPPATH\Models\FakultasModel.php(37): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\62823\\OneDrive\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ERROR - 2023-07-26 17:25:42 --> mysqli_sql_exception: Unknown column 'fakultas.id_fakultas' in 'field list' in C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `fakulta...', 0)
+#1 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `fakulta...')
+#2 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fakulta...')
+#3 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `fakulta...', Array, false)
+#4 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Models\FakultasModel.php(37): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+#6 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#7 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\62823\\...')
+#11 {main}
+CRITICAL - 2023-07-26 17:25:42 --> Unknown column 'fakultas.id_fakultas' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`', [], false)
+ 5 APPPATH\Models\FakultasModel.php(37): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\62823\\OneDrive\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
