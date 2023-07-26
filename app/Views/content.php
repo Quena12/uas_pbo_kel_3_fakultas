@@ -76,7 +76,8 @@
                                         <tr>
                                             <th>NO</th>
                                             <th>KODE FAKULTAS</th>
-                                            <th>NAMA</th>
+                                            <th>NAMA FAKULTAS</th>
+                                            <th>RUANGAN FAKULTAS</th>
                                         </tr>
                                     </thead>
                                     <?php $no = 1 ?>
@@ -84,8 +85,9 @@
                                         <tbody>
                                             <tr>
                                                 <td><?= $no++ ?> </td>
-                                                <td><?= $fakultas['kd_fakultas'] ?> </td>
-                                                <td><?= $fakultas['nama'] ?> </td>
+                                                <td><?= $fakultas->kd_fakultas ?> </td>
+                                                <td><?= $fakultas->nama_fakultas ?> </td>
+                                                <td><?= $fakultas->nama_ruangan ?> </td>
                                             </tr>
                                         </tbody>
                                     <?php endforeach; ?>

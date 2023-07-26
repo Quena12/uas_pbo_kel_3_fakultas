@@ -30,4 +30,8 @@ class RuanganModel extends Model
 
         return $newKode;
     }
+
+    protected $belongsTo = [
+        'fakultas' => 'App\Models\FakultasModel'
+    ];
 }

@@ -17,7 +17,7 @@ class Home extends BaseController
         $ruanganModel = new RuanganModel();
         $prodiModel = new ProdiModel();
 
-        $data['fakultas'] = $fakultasModel->findAll();
+        $data['fakultas'] = $fakultasModel->getData();
         $data['totalFakultas'] = $fakultasModel->countFakultasData();
         $data['ruangan'] = $ruanganModel->findAll();
         $data['totalRuangan'] = $ruanganModel->countRuanganData();

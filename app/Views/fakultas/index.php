@@ -25,8 +25,23 @@
                                         <label>Nama Fakultas</label>
                                     </div>
                                     <div class="col-md-8 form-group">
-                                        <input type="text" id="nama" class="form-control" name="nama" placeholder="Nama Fakultas">
+                                        <input type="text" id="nama_fakultas" class="form-control" name="nama_fakultas" placeholder="Nama Fakultas">
                                     </div>
+                                    <div class="col-md-4">
+                                        <label>Pilih Ruangan</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <fieldset class="form-group">
+                                            <select class="form-select" id="basicSelect" name="id_ruangan">
+                                                <option value="">-- Pilih Ruangan --</option>
+                                                <?php foreach ($ruangan as $key) : ?>
+                                                    <option value="<?= $key['id_ruangan'] ?>"><?= $key['nama_ruangan'] ?></option>
+                                                <?php endforeach; ?>
+                                            </select>
+                                        </fieldset>
+
+                                    </div>
+
                                     <div class="col-sm-12 d-flex justify-content-end">
                                         <button type="submit" class="btn btn-primary me-1 mb-1">Submit</button>
                                         <!-- <button type="reset" class="btn btn-light-secondary me-1 mb-1">Reset</button> -->
@@ -60,6 +75,7 @@
                                     <th>No</th>
                                     <th>Kode Fakultas</th>
                                     <th>Nama Fakultas</th>
+                                    <th>Ruangan Fakultas</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
@@ -67,17 +83,19 @@
                                 <?php foreach ($fakultas as $fakultas) : ?>
                                     <tr>
                                         <td><?= $no++ ?></td>
-                                        <td><?= $fakultas['kd_fakultas']; ?></td>
-                                        <td><?= $fakultas['nama']; ?></td>
+                                        <td><?= $fakultas->kd_fakultas; ?></td>
+                                        <td><?= $fakultas->nama_fakultas; ?></td>
+                                        <td><?= $fakultas->nama_ruangan; ?></td>
                                         <td>
                                             <!-- Tambahkan tombol edit dan delete -->
-                                            <a href="/fakultas/editfakultas/<?= $fakultas['id']; ?>" class="btn btn-sm btn-primary">Edit</a>
-                                            <a href="/fakultas/deletefakultas/<?= $fakultas['id']; ?>" class="btn btn-sm btn-danger" onclick="return confirm('Apakah Anda yakin ingin menghapus?')">Delete</a>
+                                            <a href="/fakultas/editfakultas/<?= $fakultas->id_fakultas; ?>" class="btn btn-sm btn-primary">Edit</a>
+                                            <a href="/fakultas/deletefakultas/<?= $fakultas->id_fakultas; ?>" class="btn btn-sm btn-danger" onclick="return confirm('Apakah Anda yakin ingin menghapus?')">Delete</a>
                                         </td>
                                     </tr>
                                 <?php endforeach; ?>
                             </tbody>
                         </table>
+                        <?= print_r($fakultas) ?>
                     </div>
                 </div>
             </div>

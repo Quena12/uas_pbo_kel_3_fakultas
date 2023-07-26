@@ -30,4 +30,8 @@ class ProdiModel extends Model
 
         return $newKodeProdi;
     }
+
+    protected $belongsTo = [
+        'fakultas' => 'App\Models\FakultasModel'
+    ];
 }
