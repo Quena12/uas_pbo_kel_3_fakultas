@@ -33,7 +33,7 @@ $routes->set404Override();
 //fakultas
 $routes->get('/', 'Home::index');
 $routes->get('/fakultas', 'Fakultas::index');
-$routes->post('/fakultas/addfakultas', 'Fakultas::create');
+$routes->post('/fakultas/addfakultas', 'Fakultas::createNewFakultas');
 $routes->get('/fakultas/deletefakultas/(:num)', 'Fakultas::delete/$1');
 $routes->get('/fakultas/editfakultas/(:num)', 'Fakultas::edit/$1');
 $routes->post('/fakultas/editfakultas/(:num)', 'Fakultas::update/$1');
