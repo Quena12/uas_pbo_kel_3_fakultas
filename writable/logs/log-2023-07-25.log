@@ -1,0 +1,94 @@
+CRITICAL - 2023-07-25 11:20:26 --> Invalid file: "prodi/prodi_view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('prodi/prodi_view.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('prodi/prodi_view', [], true)
+ 3 APPPATH\Controllers\ProdiController.php(24): view('prodi/prodi_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\prodiController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\prodiController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+CRITICAL - 2023-07-25 11:21:35 --> Invalid file: "prodi/prodi_view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('prodi/prodi_view.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('prodi/prodi_view', [], true)
+ 3 APPPATH\Controllers\ProdiController.php(24): view('prodi/prodi_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\prodiController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\prodiController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+CRITICAL - 2023-07-25 11:23:40 --> Undefined variable: dataProdi
+in APPPATH\Views\prodi\index.php on line 65.
+ 1 APPPATH\Views\prodi\index.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: dataProdi', 'C:\\Users\\User\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\app\\Views\\prodi\\index.php', 65, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\User\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\app\\Views\\prodi\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('prodi/index', [], true)
+ 5 APPPATH\Controllers\ProdiController.php(24): view('prodi/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\prodiController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\prodiController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+CRITICAL - 2023-07-25 11:26:54 --> Undefined variable: dataProdi
+in APPPATH\Views\prodi\index.php on line 65.
+ 1 APPPATH\Views\prodi\index.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: dataProdi', 'C:\\Users\\User\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\app\\Views\\prodi\\index.php', 65, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\User\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\app\\Views\\prodi\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('prodi/index', [], true)
+ 5 APPPATH\Controllers\ProdiController.php(24): view('prodi/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\prodiController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\prodiController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+CRITICAL - 2023-07-25 11:26:56 --> Undefined variable: dataProdi
+in APPPATH\Views\prodi\index.php on line 65.
+ 1 APPPATH\Views\prodi\index.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: dataProdi', 'C:\\Users\\User\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\app\\Views\\prodi\\index.php', 65, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\User\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\app\\Views\\prodi\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('prodi/index', [], true)
+ 5 APPPATH\Controllers\ProdiController.php(24): view('prodi/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\prodiController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\prodiController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+CRITICAL - 2023-07-25 11:27:18 --> Undefined variable: Prodi
+in APPPATH\Views\prodi\index.php on line 65.
+ 1 APPPATH\Views\prodi\index.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: Prodi', 'C:\\Users\\User\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\app\\Views\\prodi\\index.php', 65, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\User\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\app\\Views\\prodi\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('prodi/index', [], true)
+ 5 APPPATH\Controllers\ProdiController.php(24): view('prodi/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\prodiController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\prodiController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+CRITICAL - 2023-07-25 11:27:59 --> Undefined variable: dataProdi
+in APPPATH\Views\prodi\index.php on line 65.
+ 1 APPPATH\Views\prodi\index.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: dataProdi', 'C:\\Users\\User\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\app\\Views\\prodi\\index.php', 65, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\User\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\app\\Views\\prodi\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('prodi/index', [], true)
+ 5 APPPATH\Controllers\ProdiController.php(24): view('prodi/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\prodiController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\prodiController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+CRITICAL - 2023-07-25 11:28:00 --> Undefined variable: dataProdi
+in APPPATH\Views\prodi\index.php on line 65.
+ 1 APPPATH\Views\prodi\index.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: dataProdi', 'C:\\Users\\User\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\app\\Views\\prodi\\index.php', 65, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\User\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\app\\Views\\prodi\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('prodi/index', [], true)
+ 5 APPPATH\Controllers\ProdiController.php(24): view('prodi/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\prodiController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\prodiController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+INFO - 2023-07-25 11:36:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-25 11:44:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

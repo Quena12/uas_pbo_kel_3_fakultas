@@ -20,7 +20,7 @@ class CreateFakultasTable extends Migration
                 'type' => 'VARCHAR',
                 'constraint' => 255,
             ],
-            'nama' => [
+            'nama_fakultas' => [
                 'type' => 'VARCHAR',
                 'constraint' => 100,
             ],

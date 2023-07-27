@@ -1,11 +1,10 @@
 <?= $this->extend('Layouts/indexView') ?>
 
 <?= $this->section('content') ?>
-
 <div class="container">
     <div class="card">
         <div class="card-header bg-secondary text-white">
-            Ruangan Fakultas
+            Kelas
         </div>
         <div class="card-body">
         </div>
@@ -14,18 +13,18 @@
         <div class="col-md-6 col-12">
             <div class="card">
                 <div class="card-header">
-                    <h4 class="card-title">Tambah Fakultas Baru</h4>
+                    <h4 class="card-title">Tambah Program Kelas Baru</h4>
                 </div>
                 <div class="card-content">
                     <div class="card-body">
-                        <form class="form form-horizontal" action="/fakultas/addfakultas" method="post">
+                        <form class="form form-horizontal" action="/kelas/adddkelas" method="post">
                             <div class="form-body">
                                 <div class="row">
                                     <div class="col-md-4">
-                                        <label>Nama Fakultas</label>
+                                        <label>Nama Kelas</label>
                                     </div>
                                     <div class="col-md-8 form-group">
-                                        <input type="text" id="nama" class="form-control" name="nama" placeholder="Nama Fakultas">
+                                        <input type="text" id="nama_kelas" class="form-control" name="nama_kelas" placeholder="Nama Kelas">
                                     </div>
                                     <div class="col-sm-12 d-flex justify-content-end">
                                         <button type="submit" class="btn btn-primary me-1 mb-1">Submit</button>
@@ -40,13 +39,13 @@
         </div>
     </div>
 
-    <!-- Tambahkan tombol untuk menambah fakultas -->
+    <!-- Tambahkan tombol untuk menambah prodi -->
 
     <div class="row" id="table-bordered">
         <div class="col-12">
             <div class="card">
                 <div class="card-header">
-                    <h4 class="card-title">List Fakultas</h4>
+                    <h4 class="card-title">List Kelas</h4>
                 </div>
                 <div class="card-content">
 
@@ -57,21 +56,20 @@
                                 <?php $no = 1 ?>
                                 <tr>
                                     <th>No</th>
-                                    <th>Kode Fakultas</th>
-                                    <th>Nama Fakultas</th>
+                                    <th>Kode Kelas</th>
+                                    <th>Nama kelas</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <?php foreach ($fakultas as $fakultas) : ?>
+                                <?php foreach ($dataKelas as $kelas) : ?>
                                     <tr>
                                         <td><?= $no++ ?></td>
-                                        <td><?= $fakultas['kd_fakultas']; ?></td>
-                                        <td><?= $fakultas['nama_fakultas']; ?></td>
+                                        <td><?= $kelas['kd_kelas']; ?></td>
+                                        <td><?= $kelas['nama_kelas']; ?></td>
                                         <td>
-                                            <!-- Tambahkan tombol edit dan delete -->
-                                            <a href="/fakultas/editfakultas/<?= $fakultas['id']; ?>" class="btn btn-sm btn-primary">Edit</a>
-                                            <a href="/fakultas/deletefakultas/<?= $fakultas['id']; ?>" class="btn btn-sm btn-danger" onclick="return confirm('Apakah Anda yakin ingin menghapus?')">Delete</a>
+                                            <a href="/kelas/editkelas/<?= $kelas['id_kelas']; ?>" class="btn btn-sm btn-primary">Edit</a>
+                                            <a href="/kelas/deletekelas/<?= $kelas['id_kelas']; ?>" class="btn btn-sm btn-danger" onclick="return confirm('Apakah Anda yakin ingin menghapus?')">Delete</a>
                                         </td>
                                     </tr>
                                 <?php endforeach; ?>

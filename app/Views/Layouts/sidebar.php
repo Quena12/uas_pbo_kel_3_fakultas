@@ -57,6 +57,12 @@
                         <span>Program Studi</span>
                     </a>
                 </li>
+                <li class="sidebar-item ">
+                    <a href="/kelas" class='sidebar-link'>
+                        <i class="bi bi-grid-fill"></i>
+                        <span>Kelas</span>
+                    </a>
+                </li>
             </ul>
         </div>
     </div>

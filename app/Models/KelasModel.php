@@ -4,23 +4,23 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class ProdiModel extends Model
+class KelasModel extends Model
 {
-    protected $table = 'prodi';
-    protected $primaryKey = 'id_prodi';
-    protected $allowedFields  = ['kd_prodi', 'nama_prodi'];
+    protected $table = 'kelas';
+    protected $primaryKey = 'id_kelas';
+    protected $allowedFields  = ['kd_kelas', 'nama_kelas'];
 
-    function countProdiData()
+    function countKelasData()
     {
         return $this->countAllResults();
     }
 
-    function generateKodeProdi()
+    function generateKodeKelas()
     {
-        $lastKode = $this->orderBy('id_prodi', 'DESC')->first();
+        $lastKode = $this->orderBy('id_kelas', 'DESC')->first();
 
         if ($lastKode) {
-            $getKode = $lastKode['kd_prodi'];
+            $getKode = $lastKode['kd_kelas'];
             $lastNumKode = intval(substr($getKode, -003));
             $newNumKode = $lastNumKode + 1;
             $newKode = 'R017' . str_pad($newNumKode, 3, '0', STR_PAD_LEFT);

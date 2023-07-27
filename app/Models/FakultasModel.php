@@ -8,7 +8,7 @@ class FakultasModel extends Model
 {
     protected $table = 'fakultas';
     protected $primaryKey = 'id';
-    protected $allowedFields = ['kd_fakultas', 'nama'];
+    protected $allowedFields = ['kd_fakultas', 'nama_fakultas'];
 
     function countFakultasData()
     {
