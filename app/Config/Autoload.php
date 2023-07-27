@@ -39,10 +39,21 @@ class Autoload extends AutoloadConfig
      * @var array<string, array<int, string>|string>
      * @phpstan-var array<string, string|list<string>>
      */
+    // public $psr4 = [
+    //     APP_NAMESPACE => APPPATH, // For custom app namespace
+    //     'Config'      => APPPATH . 'Config',
+    // ];
+
+    // File: app/Config/Autoload.php
+
     public $psr4 = [
-        APP_NAMESPACE => APPPATH, // For custom app namespace
+        // ... baris lain ...
+        'App'         => APPPATH,
+        'CodeIgniter' => SYSTEMPATH,
         'Config'      => APPPATH . 'Config',
+        'NamaHelper'  => APPPATH . 'Helpers/custom_helper.php', // Tambahkan baris ini
     ];
+
 
     /**
      * -------------------------------------------------------------------

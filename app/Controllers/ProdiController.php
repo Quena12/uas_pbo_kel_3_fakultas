@@ -24,9 +24,8 @@ class prodiController extends BaseController
         return view('prodi/index', $data);
     }
 
-    function addprodi()
+    public function addprodi()
     {
-
         $newKode = $this->model->generateKodeprodi();
 
         $namaprodi = $this->request->getPost('nama_prodi');
@@ -77,8 +76,8 @@ class prodiController extends BaseController
         // Tampilkan halaman edit ruangan dengan data yang ada
         echo view('prodi/edit', $data);
     }
-    
-    function deleteProdi($id_prodi)
+
+    function deleteprodi($id_prodi)
     {
 
         $this->model->delete($id_prodi);
