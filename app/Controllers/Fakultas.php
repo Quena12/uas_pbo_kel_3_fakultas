@@ -1,18 +1,18 @@
 <?php
 
-namespace App\Controllers;
+namespace App\Models;
 
 use App\Models\FakultasModel;
 use App\Models\ProdiModel;
 use App\Models\RuanganModel;
 
-class Fakultas extends BaseController
+class FakultasModel extends Model
 {
     protected $fakultasModel;
     protected $ruanganModel;
     protected $prodiModel;
 
-    function __construct()
+    function countFakultasData()
     {
         $this->fakultasModel = new FakultasModel();
         $this->ruanganModel = new RuanganModel();
@@ -20,7 +20,7 @@ class Fakultas extends BaseController
     }
 
 
-    public function index()
+    function getData()
     {
 
         //get Ruangan Data
