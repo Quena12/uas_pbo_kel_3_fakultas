@@ -384,3 +384,138 @@ in APPPATH\Controllers\Fakultas.php on line 55.
  3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
  5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+CRITICAL - 2023-07-27 05:33:08 --> syntax error, unexpected token "<<", expecting end of file
+in APPPATH\Config\Routes.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(800): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+CRITICAL - 2023-07-27 05:35:11 --> syntax error, unexpected token "<<", expecting "function" or "const"
+in APPPATH\Controllers\ProdiController.php on line 42.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\app\\Controllers\\ProdiController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ProdiController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ProdiController')
+ 4 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\ProdiController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ERROR - 2023-07-27 05:36:42 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`fakultas`.`fakultas`, CONSTRAINT `fakultas_id_prodi_foreign` FOREIGN KEY (`id_prodi`) REFERENCES `prodi` (`id_prodi`)) in C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `pr...', 0)
+#1 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pr...')
+#2 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pr...')
+#3 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pr...', Array, false)
+#4 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Controllers\ProdiController.php(84): CodeIgniter\BaseModel->delete(Array)
+#7 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\prodiController->deleteprodi('1')
+#8 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\prodiController))
+#9 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMM...')
+#12 {main}
+CRITICAL - 2023-07-27 05:36:42 --> Cannot delete or update a parent row: a foreign key constraint fails (`fakultas`.`fakultas`, CONSTRAINT `fakultas_id_prodi_foreign` FOREIGN KEY (`id_prodi`) REFERENCES `prodi` (`id_prodi`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `prodi`
+WHERE `id_prodi` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `prodi`
+WHERE `id_prodi` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `prodi`
+WHERE `id_prodi` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `prodi`
+WHERE `id_prodi` IN :id_prodi:', [...], false)
+ 5 SYSTEMPATH\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\ProdiController.php(84): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\prodiController->deleteprodi('1')
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\prodiController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ERROR - 2023-07-27 05:36:48 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`fakultas`.`fakultas`, CONSTRAINT `fakultas_id_prodi_foreign` FOREIGN KEY (`id_prodi`) REFERENCES `prodi` (`id_prodi`)) in C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `pr...', 0)
+#1 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pr...')
+#2 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pr...')
+#3 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pr...', Array, false)
+#4 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Controllers\ProdiController.php(84): CodeIgniter\BaseModel->delete(Array)
+#7 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\prodiController->deleteprodi('1')
+#8 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\prodiController))
+#9 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMM...')
+#12 {main}
+CRITICAL - 2023-07-27 05:36:48 --> Cannot delete or update a parent row: a foreign key constraint fails (`fakultas`.`fakultas`, CONSTRAINT `fakultas_id_prodi_foreign` FOREIGN KEY (`id_prodi`) REFERENCES `prodi` (`id_prodi`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `prodi`
+WHERE `id_prodi` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `prodi`
+WHERE `id_prodi` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `prodi`
+WHERE `id_prodi` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `prodi`
+WHERE `id_prodi` IN :id_prodi:', [...], false)
+ 5 SYSTEMPATH\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\ProdiController.php(84): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\prodiController->deleteprodi('1')
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\prodiController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+INFO - 2023-07-27 05:36:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-27 05:36:55 --> Cannot use object of type stdClass as array
+in APPPATH\Views\fakultas\index.php on line 98.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('fakultas/index', [], true)
+ 4 APPPATH\Controllers\Fakultas.php(38): view('fakultas/index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Fakultas->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fakultas))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ERROR - 2023-07-27 05:37:23 --> mysqli_sql_exception: Table 'fakultas.kelas' doesn't exist in C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Controllers\KelasController.php(21): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\KelasController->index()
+#8 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KelasController))
+#9 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMM...')
+#12 {main}
+CRITICAL - 2023-07-27 05:37:23 --> Table 'fakultas.kelas' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `kelas`
+ORDER BY `id_kelas` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `kelas`
+ORDER BY `id_kelas` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `kelas`
+ORDER BY `id_kelas` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `kelas`
+ORDER BY `id_kelas` ASC', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\KelasController.php(21): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\KelasController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KelasController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+INFO - 2023-07-27 05:50:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-27 05:51:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-27 05:51:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

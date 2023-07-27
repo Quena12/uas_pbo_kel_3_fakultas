@@ -94,15 +94,10 @@
                                 <?php foreach ($fakultas as $fakultas) : ?>
                                     <tr>
                                         <td><?= $no++ ?></td>
-<<<<<<< HEAD
-                                        <td><?= $fakultas['kd_fakultas']; ?></td>
-                                        <td><?= $fakultas['nama_fakultas']; ?></td>
-=======
                                         <td><?= $fakultas->kd_fakultas; ?></td>
                                         <td><?= $fakultas->nama_fakultas; ?></td>
                                         <td><?= $fakultas->nama_ruangan; ?></td>
                                         <td><?= $fakultas->nama_prodi; ?></td>
->>>>>>> origin/alfin
                                         <td>
                                             <!-- Tambahkan tombol edit dan delete -->
                                             <a href="/fakultas/editfakultas/<?= $fakultas->id_fakultas; ?>" class="btn btn-sm btn-primary">Edit</a>
