@@ -45,8 +45,10 @@ class Fakultas extends BaseController
             'kd_fakultas' => $newKodeFakultas,
             'nama_fakultas' => $this->request->getPost('nama_fakultas'),
             'id_ruangan' => $this->request->getPost('id_ruangan'),
-            'id_prodi' => $this->request->getPost('id_prodi')
+            'id_prodi' => implode(',', $this->request->getPost('id_prodi'))
         ];
+
+
         $this->fakultasModel->insert($data);
         return redirect()->to('/fakultas');
     }
@@ -70,6 +72,7 @@ class Fakultas extends BaseController
         $data = [
             'nama_fakultas' => $this->request->getPost('nama_fakultas'),
             'id_ruangan' => $this->request->getPost('id_ruangan'),
+            'id_prodi' => $this->request->getPost('id_prodi'),
         ];
 
         $this->fakultasModel->update($id_fakultas, $data);
