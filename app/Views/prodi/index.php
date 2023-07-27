@@ -48,7 +48,6 @@
                     <h4 class="card-title">List Program Studi</h4>
                 </div>
                 <div class="card-content">
-
                     <!-- table bordered -->
                     <div class="table-responsive">
                         <table class="table table-bordered mb-0">
