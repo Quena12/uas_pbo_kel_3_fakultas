@@ -29,10 +29,36 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
+
+//fakultas
 $routes->get('/', 'Home::index');
 $routes->get('/fakultas', 'Fakultas::index');
-// $routes->get('fakultas/json', 'Fakultas::getJson');
+$routes->post('/fakultas/addfakultas', 'Fakultas::createNewFakultas');
+$routes->get('/fakultas/deletefakultas/(:num)', 'Fakultas::delete/$1');
+$routes->get('/fakultas/editfakultas/(:num)', 'Fakultas::edit/$1');
+$routes->post('/fakultas/editfakultas/(:num)', 'Fakultas::update/$1');
 
+//ruangan
+$routes->get('/ruangan', 'RuanganController::index');
+$routes->post('/ruangan/addruangan', 'RuanganController::addRuangan');
+$routes->get('/ruangan/editruangan/(:num)', 'RuanganController::editRuangan/$1');
+$routes->post('/ruangan/editruangan/(:num)', 'RuanganController::editRuangan/$1');
+$routes->get('/ruangan/deleteruangan/(:num)', 'RuanganController::deleteRuangan/$1');
+
+
+//kelas
+$routes->get('/kelas', 'KelasController::index');
+$routes->post('/kelas/adddkelas', 'KelasController::addKelas');
+$routes->get('/kelas/editkelas/(:num)', 'KelasController::editKelas/$1');
+$routes->post('/kelas/editkelas/(:num)', 'KelasController::editKelas/$1');
+$routes->get('/kelas/deletekelas/(:num)', 'KelasController::deleteKelas/$1');
+
+//prodi
+$routes->get('/prodi', 'ProdiController::index');
+$routes->post('/prodi/addprodi', 'ProdiController::addprodi');
+$routes->get('/prodi/editprodi/(:num)', 'ProdiController::editProdi/$1');
+$routes->post('/prodi/editprodi/(:num)', 'ProdiController::editProdi/$1');
+$routes->get('/prodi/deleteprodi/(:num)', 'ProdiController::deleteprodi/$1');
 /*
  * --------------------------------------------------------------------
  * Additional Routing

@@ -1,0 +1,497 @@
+CRITICAL - 2023-07-23 03:24:51 --> Undefined variable $ruangan
+in APPPATH\Views\ruangan\ruangan_view.php on line 65.
+ 1 APPPATH\Views\ruangan\ruangan_view.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ruangan', 'C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\app\\Views\\ruangan\\ruangan_view.php', 65)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\app\\Views\\ruangan\\ruangan_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('ruangan/ruangan_view', [], true)
+ 5 APPPATH\Controllers\RuanganController.php(24): view('ruangan/ruangan_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RuanganController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+CRITICAL - 2023-07-23 03:25:57 --> Invalid file: "edit_ruangan.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('edit_ruangan.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('edit_ruangan', [], true)
+ 3 APPPATH\Controllers\RuanganController.php(77): view('edit_ruangan', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RuanganController->editRuangan('1')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+CRITICAL - 2023-07-23 03:27:58 --> Invalid file: "edit_ruangan.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('edit_ruangan.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('edit_ruangan', [], true)
+ 3 APPPATH\Controllers\RuanganController.php(77): view('edit_ruangan', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RuanganController->editRuangan('2')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+CRITICAL - 2023-07-23 03:28:51 --> Invalid file: "edit_ruangan.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('edit_ruangan.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('edit_ruangan', [], true)
+ 3 APPPATH\Controllers\RuanganController.php(77): view('edit_ruangan', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RuanganController->editRuangan('1')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+CRITICAL - 2023-07-23 03:30:16 --> Invalid file: "edit_ruangan.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('edit_ruangan.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('edit_ruangan', [], true)
+ 3 APPPATH\Controllers\RuanganController.php(77): view('edit_ruangan', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RuanganController->editRuangan('1')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+CRITICAL - 2023-07-23 03:31:13 --> Invalid file: "edit_ruangan.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('edit_ruangan.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('edit_ruangan', [], true)
+ 3 APPPATH\Controllers\RuanganController.php(77): view('edit_ruangan', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RuanganController->editRuangan('2')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+CRITICAL - 2023-07-23 03:32:50 --> Invalid file: "edit_ruangan.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('edit_ruangan.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('edit_ruangan', [], true)
+ 3 APPPATH\Controllers\RuanganController.php(77): view('edit_ruangan', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RuanganController->editRuangan('2')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+CRITICAL - 2023-07-23 03:32:55 --> Invalid file: "edit_ruangan.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('edit_ruangan.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('edit_ruangan', [], true)
+ 3 APPPATH\Controllers\RuanganController.php(77): view('edit_ruangan', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RuanganController->editRuangan('1')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ERROR - 2023-07-23 07:13:57 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'fakultas', 3306, '', 0)
+#1 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Controllers\Home.php(18): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#8 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMM...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Controllers\Home.php(18): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#7 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMM...')
+#11 {main}
+CRITICAL - 2023-07-23 07:13:57 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `fakultas`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Home.php(18): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+CRITICAL - 2023-07-23 08:03:12 --> Call to undefined method App\Models\ProdiModel::countRuanganData
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\Home.php(25): CodeIgniter\Model->__call('countRuanganData', [])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+<<<<<<< HEAD
+ERROR - 2023-07-23 08:53:45 --> mysqli_sql_exception: Table 'fakultas.ruangan' doesn't exist in C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Controllers\Home.php(22): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#8 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\D...')
+#12 {main}
+CRITICAL - 2023-07-23 08:53:45 --> Table 'fakultas.ruangan' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `ruangan`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `ruangan`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `ruangan`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `ruangan`', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(22): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+CRITICAL - 2023-07-23 08:54:41 --> Undefined index: kd_fakultas
+in APPPATH\Views\content.php on line 87.
+ 1 APPPATH\Views\content.php(87): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: kd_fakultas', 'C:\\Users\\User\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\app\\Views\\content.php', 87, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\User\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\app\\Views\\content.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('content', [], true)
+ 5 APPPATH\Controllers\Home.php(32): view('content', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+CRITICAL - 2023-07-23 09:08:40 --> Undefined index: nama
+in APPPATH\Views\fakultas\edit.php on line 15.
+ 1 APPPATH\Views\fakultas\edit.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nama', 'C:\\Users\\User\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\app\\Views\\fakultas\\edit.php', 15, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\User\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\app\\Views\\fakultas\\edit.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('fakultas/edit', [], true)
+ 5 APPPATH\Controllers\Fakultas.php(52): view('fakultas/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Fakultas->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fakultas))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+CRITICAL - 2023-07-23 09:17:06 --> Class App\Database\Migrations\Kelas contains 1 abstract method and must therefore be declared abstract or implement the remaining methods (CodeIgniter\Database\Migration::down)
+in APPPATH\Database\Migrations\2023-07-23-091316_Kelas.php on line 32.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-07-23 09:17:22 --> Class App\Database\Migrations\Kelas contains 1 abstract method and must therefore be declared abstract or implement the remaining methods (CodeIgniter\Database\Migration::down)
+in APPPATH\Database\Migrations\2023-07-23-091316_Kelas.php on line 32.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-07-23 09:41:35 --> Class App\Database\Migrations\Kelas contains 1 abstract method and must therefore be declared abstract or implement the remaining methods (CodeIgniter\Database\Migration::down)
+in APPPATH\Database\Migrations\2023-07-23-091316_Kelas.php on line 32.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-07-23 09:42:01 --> Class App\Database\Migrations\Kelas contains 1 abstract method and must therefore be declared abstract or implement the remaining methods (CodeIgniter\Database\Migration::down)
+in APPPATH\Database\Migrations\2023-07-23-091316_Kelas.php on line 32.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-07-23 09:42:55 --> Class App\Database\Migrations\Kelas contains 1 abstract method and must therefore be declared abstract or implement the remaining methods (CodeIgniter\Database\Migration::down)
+in APPPATH\Database\Migrations\2023-07-23-091316_Kelas.php on line 32.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-07-23 10:17:46 --> Class 'App\Controllers\KelasModel' not found
+in APPPATH\Controllers\KelasController.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\KelasController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+CRITICAL - 2023-07-23 10:19:36 --> Class 'App\Controllers\KelasModel' not found
+in APPPATH\Controllers\KelasController.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\KelasController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+CRITICAL - 2023-07-23 10:19:37 --> Class 'App\Controllers\KelasModel' not found
+in APPPATH\Controllers\KelasController.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\KelasController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+CRITICAL - 2023-07-23 10:19:38 --> Class 'App\Controllers\KelasModel' not found
+in APPPATH\Controllers\KelasController.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\KelasController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+CRITICAL - 2023-07-23 10:19:38 --> Class 'App\Controllers\KelasModel' not found
+in APPPATH\Controllers\KelasController.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\KelasController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+CRITICAL - 2023-07-23 10:19:39 --> Class 'App\Controllers\KelasModel' not found
+in APPPATH\Controllers\KelasController.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\KelasController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+CRITICAL - 2023-07-23 10:19:39 --> Class 'App\Controllers\KelasModel' not found
+in APPPATH\Controllers\KelasController.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\KelasController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+CRITICAL - 2023-07-23 10:25:07 --> Object of class CodeIgniter\Router\RouteCollection could not be converted to string
+in APPPATH\Config\Routes.php on line 55.
+ 1 SYSTEMPATH\Router\RouteCollection.php(267): require()
+ 2 SYSTEMPATH\CodeIgniter.php(800): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+CRITICAL - 2023-07-23 10:43:05 --> Undefined variable: ruangan
+in APPPATH\Views\kelas\edit.php on line 11.
+ 1 APPPATH\Views\kelas\edit.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: ruangan', 'C:\\Users\\User\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\app\\Views\\kelas\\edit.php', 11, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\User\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\app\\Views\\kelas\\edit.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('kelas/edit', [], true)
+ 5 APPPATH\Controllers\KelasController.php(77): view('kelas/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\KelasController->editKelas('1')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KelasController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+CRITICAL - 2023-07-23 10:52:24 --> Invalid file: "kelas/kelas_view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('kelas/kelas_view.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('kelas/kelas_view', [], true)
+ 3 APPPATH\Controllers\KelasController.php(23): view('kelas/kelas_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\KelasController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KelasController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+CRITICAL - 2023-07-23 10:52:32 --> Invalid file: "kelas/kelas_view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('kelas/kelas_view.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('kelas/kelas_view', [], true)
+ 3 APPPATH\Controllers\KelasController.php(23): view('kelas/kelas_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\KelasController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KelasController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+CRITICAL - 2023-07-23 10:53:44 --> Invalid file: "kelas/kelas_view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('kelas/kelas_view.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('kelas/kelas_view', [], true)
+ 3 APPPATH\Controllers\KelasController.php(23): view('kelas/kelas_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\KelasController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KelasController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+CRITICAL - 2023-07-23 10:56:11 --> Invalid file: "kelas/kelas_view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('kelas/kelas_view.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('kelas/kelas_view', [], true)
+ 3 APPPATH\Controllers\KelasController.php(23): view('kelas/kelas_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\KelasController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KelasController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+CRITICAL - 2023-07-23 10:57:30 --> Invalid file: "kelas/kelas_view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('kelas/kelas_view.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('kelas/kelas_view', [], true)
+ 3 APPPATH\Controllers\KelasController.php(23): view('kelas/kelas_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\KelasController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KelasController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+CRITICAL - 2023-07-23 10:59:42 --> Invalid file: "kelas/kelas_view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('kelas/kelas_view.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('kelas/kelas_view', [], true)
+ 3 APPPATH\Controllers\KelasController.php(23): view('kelas/kelas_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\KelasController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KelasController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+CRITICAL - 2023-07-23 11:05:59 --> Invalid file: "kelas/kelas_view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('kelas/kelas_view.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('kelas/kelas_view', [], true)
+ 3 APPPATH\Controllers\KelasController.php(22): view('kelas/kelas_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\KelasController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KelasController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+=======
+CRITICAL - 2023-07-23 09:16:36 --> Undefined property: CodeIgniter\HTTP\Response::$json_encode
+in APPPATH\Controllers\Fakultas.php on line 21.
+ 1 APPPATH\Controllers\Fakultas.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\HTTP\\Response::$json_encode', 'C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\app\\Controllers\\Fakultas.php', 21)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Fakultas->index()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fakultas))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+CRITICAL - 2023-07-23 09:17:26 --> Object of class CodeIgniter\HTTP\Response could not be converted to string
+in APPPATH\Views\fakultas\index.php on line 50.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('fakultas/index', [], true)
+ 4 APPPATH\Controllers\Fakultas.php(22): view('fakultas/index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Fakultas->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fakultas))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+CRITICAL - 2023-07-23 09:17:58 --> json_decode(): Argument #1 ($json) must be of type string, CodeIgniter\HTTP\Response given
+in APPPATH\Views\fakultas\index.php on line 50.
+ 1 APPPATH\Views\fakultas\index.php(50): json_decode(Object(CodeIgniter\HTTP\Response))
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\app\\Views\\fakultas\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('fakultas/index', [], true)
+ 5 APPPATH\Controllers\Fakultas.php(22): view('fakultas/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Fakultas->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fakultas))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+CRITICAL - 2023-07-23 09:21:26 --> Object of class stdClass could not be converted to string
+in APPPATH\Views\fakultas\index.php on line 50.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('fakultas/index', [], true)
+ 4 APPPATH\Controllers\Fakultas.php(26): view('fakultas/index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Fakultas->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fakultas))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+CRITICAL - 2023-07-23 09:22:15 --> Undefined variable $json
+in APPPATH\Views\fakultas\index.php on line 50.
+ 1 APPPATH\Views\fakultas\index.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $json', 'C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\app\\Views\\fakultas\\index.php', 50)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\app\\Views\\fakultas\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('fakultas/index', [], true)
+ 5 APPPATH\Controllers\Fakultas.php(26): view('fakultas/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Fakultas->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fakultas))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+CRITICAL - 2023-07-23 09:22:22 --> Undefined variable $json
+in APPPATH\Views\fakultas\index.php on line 50.
+ 1 APPPATH\Views\fakultas\index.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $json', 'C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\app\\Views\\fakultas\\index.php', 50)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\app\\Views\\fakultas\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('fakultas/index', [], true)
+ 5 APPPATH\Controllers\Fakultas.php(26): view('fakultas/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Fakultas->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fakultas))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ERROR - 2023-07-23 09:46:37 --> mysqli_sql_exception: Unknown column 'fakultas.id_ruangan' in 'on clause' in C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Models\FakultasModel.php(38): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Controllers\Fakultas.php(19): App\Models\FakultasModel->getRuangan()
+#6 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Fakultas->index()
+#7 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fakultas))
+#8 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMM...')
+#11 {main}
+CRITICAL - 2023-07-23 09:46:37 --> Unknown column 'fakultas.id_ruangan' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan`=`fakultas`.`id_ruangan`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan`=`fakultas`.`id_ruangan`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan`=`fakultas`.`id_ruangan`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan`=`fakultas`.`id_ruangan`', [], false)
+ 5 APPPATH\Models\FakultasModel.php(38): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Fakultas.php(19): App\Models\FakultasModel->getRuangan()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Fakultas->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fakultas))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+CRITICAL - 2023-07-23 11:13:09 --> Undefined variable $ruangan
+in APPPATH\Views\ruangan\edit.php on line 6.
+ 1 APPPATH\Views\ruangan\edit.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ruangan', 'C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\app\\Views\\ruangan\\edit.php', 6)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\app\\Views\\ruangan\\edit.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('ruangan/edit', [], true)
+ 5 APPPATH\Controllers\ProdiController.php(73): view('ruangan/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\ProdiController->editProdi('2')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProdiController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+CRITICAL - 2023-07-23 11:13:40 --> Undefined variable $ruangan
+in APPPATH\Views\ruangan\edit.php on line 6.
+ 1 APPPATH\Views\ruangan\edit.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ruangan', 'C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\app\\Views\\ruangan\\edit.php', 6)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\app\\Views\\ruangan\\edit.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('ruangan/edit', [], true)
+ 5 APPPATH\Controllers\ProdiController.php(73): view('ruangan/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\ProdiController->editProdi('2')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProdiController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+CRITICAL - 2023-07-23 11:15:07 --> Undefined variable $ruangan
+in APPPATH\Views\ruangan\edit.php on line 6.
+ 1 APPPATH\Views\ruangan\edit.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ruangan', 'C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\app\\Views\\ruangan\\edit.php', 6)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\app\\Views\\ruangan\\edit.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('ruangan/edit', [], true)
+ 5 APPPATH\Controllers\ProdiController.php(73): view('ruangan/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\ProdiController->editProdi('2')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProdiController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+CRITICAL - 2023-07-23 11:15:27 --> Undefined variable $ruangan
+in APPPATH\Views\ruangan\edit.php on line 6.
+ 1 APPPATH\Views\ruangan\edit.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ruangan', 'C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\app\\Views\\ruangan\\edit.php', 6)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\app\\Views\\ruangan\\edit.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('ruangan/edit', [], true)
+ 5 APPPATH\Controllers\ProdiController.php(73): view('ruangan/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\ProdiController->editProdi('2')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProdiController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+>>>>>>> origin/alfin

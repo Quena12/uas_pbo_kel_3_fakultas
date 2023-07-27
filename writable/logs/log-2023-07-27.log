@@ -1,0 +1,1911 @@
+CRITICAL - 2023-07-27 00:37:49 --> Attempt to read property "id_ruangan" on array
+in APPPATH\Views\fakultas\index.php on line 50.
+ 1 APPPATH\Views\fakultas\index.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id_ruangan" on array', 'C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\app\\Views\\fakultas\\index.php', 50)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\app\\Views\\fakultas\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('fakultas/index', [], true)
+ 5 APPPATH\Controllers\Fakultas.php(34): view('fakultas/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Fakultas->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fakultas))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+CRITICAL - 2023-07-27 00:38:11 --> Attempt to read property "id_ruangan" on array
+in APPPATH\Views\fakultas\index.php on line 50.
+ 1 APPPATH\Views\fakultas\index.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id_ruangan" on array', 'C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\app\\Views\\fakultas\\index.php', 50)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\app\\Views\\fakultas\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('fakultas/index', [], true)
+ 5 APPPATH\Controllers\Fakultas.php(34): view('fakultas/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Fakultas->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fakultas))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ERROR - 2023-07-27 00:50:07 --> mysqli_sql_exception: Can't create table `fakultas`.`fakultas` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `f...', 0)
+#1 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `f...')
+#2 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `f...')
+#3 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `f...')
+#4 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Database\Migrations\2023-07-25-072915_FakultasMigration.php(41): CodeIgniter\Database\Forge->createTable('fakultas', true)
+#5 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MigrationRunner.php(877): App\Database\Migrations\FakultasMigration->up()
+#6 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CLI\BaseCommand.php(114): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Database\MigrateRefresh.php(85): CodeIgniter\CLI\BaseCommand->call('migrate', Array)
+#11 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\spark(97): CodeIgniter\CLI\Console->run()
+#14 {main}
+ERROR - 2023-07-27 00:54:49 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0, 1, 2, 3) VALUES (:0:, :1:, :2:, :3:)' at line 1 in C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fa...', 0)
+#1 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fa...')
+#2 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fa...')
+#3 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fa...', Array, false)
+#4 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Database\Seeds\ProdiSeeder.php(33): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\Seeder.php(146): App\Database\Seeds\ProdiSeeder->run()
+#6 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#7 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#8 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#9 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\spark(97): CodeIgniter\CLI\Console->run()
+#10 {main}
+ERROR - 2023-07-27 00:55:08 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0, 1, 2, 3) VALUES (:0:, :1:, :2:, :3:)' at line 1 in C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fa...', 0)
+#1 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fa...')
+#2 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fa...')
+#3 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fa...', Array, false)
+#4 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Database\Seeds\ProdiSeeder.php(33): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\Seeder.php(146): App\Database\Seeds\ProdiSeeder->run()
+#6 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#7 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#8 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#9 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\spark(97): CodeIgniter\CLI\Console->run()
+#10 {main}
+ERROR - 2023-07-27 01:05:10 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`fakultas`.`fakultas`, CONSTRAINT `fakultas_id_prodi_foreign` FOREIGN KEY (`id_prodi`) REFERENCES `prodi` (`id_prodi`)) in C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fa...', 0)
+#1 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fa...')
+#2 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fa...')
+#3 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fa...', Array, false)
+#4 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Controllers\Fakultas.php(50): CodeIgniter\Model->insert(Array)
+#8 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Fakultas->createNewFakultas()
+#9 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fakultas))
+#10 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMM...')
+#13 {main}
+CRITICAL - 2023-07-27 01:05:10 --> Cannot add or update a child row: a foreign key constraint fails (`fakultas`.`fakultas`, CONSTRAINT `fakultas_id_prodi_foreign` FOREIGN KEY (`id_prodi`) REFERENCES `prodi` (`id_prodi`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`) VALUES (\'F017001\', \'Teknologi Informasi\', \'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`) VALUES (\'F017001\', \'Teknologi Informasi\', \'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`) VALUES (\'F017001\', \'Teknologi Informasi\', \'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`) VALUES (:kd_fakultas:, :nama_fakultas:, :id_ruangan:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Fakultas.php(50): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Fakultas->createNewFakultas()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fakultas))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ERROR - 2023-07-27 01:06:08 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`fakultas`.`fakultas`, CONSTRAINT `fakultas_id_prodi_foreign` FOREIGN KEY (`id_prodi`) REFERENCES `prodi` (`id_prodi`)) in C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fa...', 0)
+#1 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fa...')
+#2 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fa...')
+#3 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fa...', Array, false)
+#4 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Controllers\Fakultas.php(50): CodeIgniter\Model->insert(Array)
+#8 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Fakultas->createNewFakultas()
+#9 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fakultas))
+#10 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMM...')
+#13 {main}
+CRITICAL - 2023-07-27 01:06:08 --> Cannot add or update a child row: a foreign key constraint fails (`fakultas`.`fakultas`, CONSTRAINT `fakultas_id_prodi_foreign` FOREIGN KEY (`id_prodi`) REFERENCES `prodi` (`id_prodi`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`) VALUES (\'F017001\', \'Teknologi Informasi\', \'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`) VALUES (\'F017001\', \'Teknologi Informasi\', \'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`) VALUES (\'F017001\', \'Teknologi Informasi\', \'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`) VALUES (:kd_fakultas:, :nama_fakultas:, :id_ruangan:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Fakultas.php(50): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Fakultas->createNewFakultas()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fakultas))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ERROR - 2023-07-27 01:10:01 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`fakultas`.`fakultas`, CONSTRAINT `fakultas_id_prodi_foreign` FOREIGN KEY (`id_prodi`) REFERENCES `prodi` (`id_prodi`)) in C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fa...', 0)
+#1 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fa...')
+#2 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fa...')
+#3 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fa...', Array, false)
+#4 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Controllers\Fakultas.php(50): CodeIgniter\Model->insert(Array)
+#8 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Fakultas->createNewFakultas()
+#9 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fakultas))
+#10 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMM...')
+#13 {main}
+CRITICAL - 2023-07-27 01:10:01 --> Cannot add or update a child row: a foreign key constraint fails (`fakultas`.`fakultas`, CONSTRAINT `fakultas_id_prodi_foreign` FOREIGN KEY (`id_prodi`) REFERENCES `prodi` (`id_prodi`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`) VALUES (\'F017001\', \'Teknologi Informasi\', \'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`) VALUES (\'F017001\', \'Teknologi Informasi\', \'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`) VALUES (\'F017001\', \'Teknologi Informasi\', \'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`) VALUES (:kd_fakultas:, :nama_fakultas:, :id_ruangan:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Fakultas.php(50): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Fakultas->createNewFakultas()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fakultas))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ERROR - 2023-07-27 01:10:14 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`fakultas`.`fakultas`, CONSTRAINT `fakultas_id_prodi_foreign` FOREIGN KEY (`id_prodi`) REFERENCES `prodi` (`id_prodi`)) in C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fa...', 0)
+#1 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fa...')
+#2 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fa...')
+#3 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fa...', Array, false)
+#4 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Controllers\Fakultas.php(50): CodeIgniter\Model->insert(Array)
+#8 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Fakultas->createNewFakultas()
+#9 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fakultas))
+#10 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMM...')
+#13 {main}
+CRITICAL - 2023-07-27 01:10:14 --> Cannot add or update a child row: a foreign key constraint fails (`fakultas`.`fakultas`, CONSTRAINT `fakultas_id_prodi_foreign` FOREIGN KEY (`id_prodi`) REFERENCES `prodi` (`id_prodi`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`) VALUES (\'F017001\', \',lmknjkml,\', \'2\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`) VALUES (\'F017001\', \',lmknjkml,\', \'2\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`) VALUES (\'F017001\', \',lmknjkml,\', \'2\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`) VALUES (:kd_fakultas:, :nama_fakultas:, :id_ruangan:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Fakultas.php(50): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Fakultas->createNewFakultas()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fakultas))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ERROR - 2023-07-27 01:32:36 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`fakultas`.`fakultas`, CONSTRAINT `fakultas_id_prodi_foreign` FOREIGN KEY (`id_prodi`) REFERENCES `prodi` (`id_prodi`)) in C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fa...', 0)
+#1 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fa...')
+#2 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fa...')
+#3 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fa...', Array, false)
+#4 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Controllers\Fakultas.php(50): CodeIgniter\Model->insert(Array)
+#8 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Fakultas->createNewFakultas()
+#9 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fakultas))
+#10 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMM...')
+#13 {main}
+CRITICAL - 2023-07-27 01:32:36 --> Cannot add or update a child row: a foreign key constraint fails (`fakultas`.`fakultas`, CONSTRAINT `fakultas_id_prodi_foreign` FOREIGN KEY (`id_prodi`) REFERENCES `prodi` (`id_prodi`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`) VALUES (\'F017001\', \',lmknjkml,\', \'2\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`) VALUES (\'F017001\', \',lmknjkml,\', \'2\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`) VALUES (\'F017001\', \',lmknjkml,\', \'2\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`) VALUES (:kd_fakultas:, :nama_fakultas:, :id_ruangan:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Fakultas.php(50): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Fakultas->createNewFakultas()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fakultas))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ERROR - 2023-07-27 01:32:50 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`fakultas`.`fakultas`, CONSTRAINT `fakultas_id_prodi_foreign` FOREIGN KEY (`id_prodi`) REFERENCES `prodi` (`id_prodi`)) in C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fa...', 0)
+#1 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fa...')
+#2 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fa...')
+#3 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fa...', Array, false)
+#4 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Controllers\Fakultas.php(50): CodeIgniter\Model->insert(Array)
+#8 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Fakultas->createNewFakultas()
+#9 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fakultas))
+#10 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMM...')
+#13 {main}
+CRITICAL - 2023-07-27 01:32:50 --> Cannot add or update a child row: a foreign key constraint fails (`fakultas`.`fakultas`, CONSTRAINT `fakultas_id_prodi_foreign` FOREIGN KEY (`id_prodi`) REFERENCES `prodi` (`id_prodi`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`) VALUES (\'F017001\', \'adad\', \'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`) VALUES (\'F017001\', \'adad\', \'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`) VALUES (\'F017001\', \'adad\', \'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`) VALUES (:kd_fakultas:, :nama_fakultas:, :id_ruangan:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Fakultas.php(50): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Fakultas->createNewFakultas()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fakultas))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ERROR - 2023-07-27 02:04:09 --> mysqli_sql_exception: Operand should contain 1 column(s) in C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fa...', 0)
+#1 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fa...')
+#2 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fa...')
+#3 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fa...', Array, false)
+#4 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Controllers\Fakultas.php(50): CodeIgniter\Model->insert(Array)
+#8 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Fakultas->createNewFakultas()
+#9 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fakultas))
+#10 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMM...')
+#13 {main}
+CRITICAL - 2023-07-27 02:04:09 --> Operand should contain 1 column(s)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`, `id_prodi`) VALUES (\'F017002\', \'nb\', \'2\', (\'1\',\'2\'))', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`, `id_prodi`) VALUES (\'F017002\', \'nb\', \'2\', (\'1\',\'2\'))')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`, `id_prodi`) VALUES (\'F017002\', \'nb\', \'2\', (\'1\',\'2\'))')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`, `id_prodi`) VALUES (:kd_fakultas:, :nama_fakultas:, :id_ruangan:, :id_prodi:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Fakultas.php(50): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Fakultas->createNewFakultas()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fakultas))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ERROR - 2023-07-27 02:07:27 --> mysqli_sql_exception: Column 'id_prodi' cannot be null in C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fa...', 0)
+#1 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fa...')
+#2 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fa...')
+#3 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fa...', Array, false)
+#4 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Controllers\Fakultas.php(50): CodeIgniter\Model->insert(Array)
+#8 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Fakultas->createNewFakultas()
+#9 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fakultas))
+#10 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMM...')
+#13 {main}
+CRITICAL - 2023-07-27 02:07:27 --> Column 'id_prodi' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`, `id_prodi`) VALUES (\'F017002\', \'nb\', \'2\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`, `id_prodi`) VALUES (\'F017002\', \'nb\', \'2\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`, `id_prodi`) VALUES (\'F017002\', \'nb\', \'2\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`, `id_prodi`) VALUES (:kd_fakultas:, :nama_fakultas:, :id_ruangan:, :id_prodi:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Fakultas.php(50): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Fakultas->createNewFakultas()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fakultas))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ERROR - 2023-07-27 02:11:54 --> mysqli_sql_exception: Column 'id_prodi' cannot be null in C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fa...', 0)
+#1 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fa...')
+#2 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fa...')
+#3 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fa...', Array, false)
+#4 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Controllers\Fakultas.php(50): CodeIgniter\Model->insert(Array)
+#8 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Fakultas->createNewFakultas()
+#9 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fakultas))
+#10 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMM...')
+#13 {main}
+CRITICAL - 2023-07-27 02:11:54 --> Column 'id_prodi' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`, `id_prodi`) VALUES (\'F017003\', \'mmbm\', \'1\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`, `id_prodi`) VALUES (\'F017003\', \'mmbm\', \'1\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`, `id_prodi`) VALUES (\'F017003\', \'mmbm\', \'1\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`, `id_prodi`) VALUES (:kd_fakultas:, :nama_fakultas:, :id_ruangan:, :id_prodi:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Fakultas.php(50): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Fakultas->createNewFakultas()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fakultas))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+CRITICAL - 2023-07-27 03:16:58 --> Array to string conversion
+in SYSTEMPATH\Database\Query.php on line 329.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\system\\Database\\Query.php', 329)
+ 2 SYSTEMPATH\Database\Query.php(329): implode(',', [...])
+ 3 SYSTEMPATH\Database\Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`, `id_prodi`) VALUES (:kd_fakultas:, :nama_fakultas:, :id_ruangan:, :id_prodi:)', [...])
+ 4 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 5 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 6 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`, `id_prodi`) VALUES (:kd_fakultas:, :nama_fakultas:, :id_ruangan:, :id_prodi:)', [...], false)
+ 7 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 8 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 9 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+10 APPPATH\Controllers\Fakultas.php(53): CodeIgniter\Model->insert([...])
+11 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Fakultas->createNewFakultas()
+12 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fakultas))
+13 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+CRITICAL - 2023-07-27 03:57:05 --> CodeIgniter\Model::insert(): Argument #2 ($returnID) must be of type bool, array given, called in C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Controllers\Fakultas.php on line 55
+in SYSTEMPATH\Model.php on line 708.
+ 1 APPPATH\Controllers\Fakultas.php(55): CodeIgniter\Model->insert([...], [...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Fakultas->createNewFakultas()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fakultas))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+CRITICAL - 2023-07-27 03:57:46 --> CodeIgniter\Model::insert(): Argument #2 ($returnID) must be of type bool, array given, called in C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Controllers\Fakultas.php on line 55
+in SYSTEMPATH\Model.php on line 708.
+ 1 APPPATH\Controllers\Fakultas.php(55): CodeIgniter\Model->insert([...], [...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Fakultas->createNewFakultas()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fakultas))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+CRITICAL - 2023-07-27 03:58:14 --> Cannot use [] for reading
+in APPPATH\Controllers\Fakultas.php on line 55.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Fakultas->createNewFakultas()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fakultas))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+CRITICAL - 2023-07-27 05:33:08 --> syntax error, unexpected token "<<", expecting end of file
+in APPPATH\Config\Routes.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(800): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+CRITICAL - 2023-07-27 05:35:11 --> syntax error, unexpected token "<<", expecting "function" or "const"
+in APPPATH\Controllers\ProdiController.php on line 42.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\app\\Controllers\\ProdiController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ProdiController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ProdiController')
+ 4 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\ProdiController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ERROR - 2023-07-27 05:36:42 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`fakultas`.`fakultas`, CONSTRAINT `fakultas_id_prodi_foreign` FOREIGN KEY (`id_prodi`) REFERENCES `prodi` (`id_prodi`)) in C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `pr...', 0)
+#1 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pr...')
+#2 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pr...')
+#3 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pr...', Array, false)
+#4 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Controllers\ProdiController.php(84): CodeIgniter\BaseModel->delete(Array)
+#7 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\prodiController->deleteprodi('1')
+#8 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\prodiController))
+#9 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMM...')
+#12 {main}
+CRITICAL - 2023-07-27 05:36:42 --> Cannot delete or update a parent row: a foreign key constraint fails (`fakultas`.`fakultas`, CONSTRAINT `fakultas_id_prodi_foreign` FOREIGN KEY (`id_prodi`) REFERENCES `prodi` (`id_prodi`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `prodi`
+WHERE `id_prodi` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `prodi`
+WHERE `id_prodi` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `prodi`
+WHERE `id_prodi` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `prodi`
+WHERE `id_prodi` IN :id_prodi:', [...], false)
+ 5 SYSTEMPATH\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\ProdiController.php(84): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\prodiController->deleteprodi('1')
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\prodiController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ERROR - 2023-07-27 05:36:48 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`fakultas`.`fakultas`, CONSTRAINT `fakultas_id_prodi_foreign` FOREIGN KEY (`id_prodi`) REFERENCES `prodi` (`id_prodi`)) in C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `pr...', 0)
+#1 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pr...')
+#2 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pr...')
+#3 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pr...', Array, false)
+#4 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Controllers\ProdiController.php(84): CodeIgniter\BaseModel->delete(Array)
+#7 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\prodiController->deleteprodi('1')
+#8 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\prodiController))
+#9 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMM...')
+#12 {main}
+CRITICAL - 2023-07-27 05:36:48 --> Cannot delete or update a parent row: a foreign key constraint fails (`fakultas`.`fakultas`, CONSTRAINT `fakultas_id_prodi_foreign` FOREIGN KEY (`id_prodi`) REFERENCES `prodi` (`id_prodi`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `prodi`
+WHERE `id_prodi` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `prodi`
+WHERE `id_prodi` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `prodi`
+WHERE `id_prodi` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `prodi`
+WHERE `id_prodi` IN :id_prodi:', [...], false)
+ 5 SYSTEMPATH\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\ProdiController.php(84): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\prodiController->deleteprodi('1')
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\prodiController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+INFO - 2023-07-27 05:36:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-27 05:36:55 --> Cannot use object of type stdClass as array
+in APPPATH\Views\fakultas\index.php on line 98.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('fakultas/index', [], true)
+ 4 APPPATH\Controllers\Fakultas.php(38): view('fakultas/index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Fakultas->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fakultas))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ERROR - 2023-07-27 05:37:23 --> mysqli_sql_exception: Table 'fakultas.kelas' doesn't exist in C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Controllers\KelasController.php(21): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\KelasController->index()
+#8 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KelasController))
+#9 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMM...')
+#12 {main}
+CRITICAL - 2023-07-27 05:37:23 --> Table 'fakultas.kelas' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `kelas`
+ORDER BY `id_kelas` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `kelas`
+ORDER BY `id_kelas` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `kelas`
+ORDER BY `id_kelas` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `kelas`
+ORDER BY `id_kelas` ASC', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\KelasController.php(21): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\KelasController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KelasController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+INFO - 2023-07-27 05:50:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-27 05:51:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-27 05:51:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-27 11:50:49 --> mysqli_sql_exception: Unknown column 'fakultas.id_ruangan' in 'on clause' in E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+#6 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#7 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('E:\\UNU\\Pelajara...')
+#11 {main}
+CRITICAL - 2023-07-27 11:50:49 --> Unknown column 'fakultas.id_ruangan' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', [], false)
+ 5 APPPATH\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\UNU\\Pelajaran\\Semester 4\\PBO\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ERROR - 2023-07-27 11:50:50 --> mysqli_sql_exception: Unknown column 'fakultas.id_ruangan' in 'on clause' in E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+#6 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#7 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('E:\\UNU\\Pelajara...')
+#11 {main}
+CRITICAL - 2023-07-27 11:50:50 --> Unknown column 'fakultas.id_ruangan' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', [], false)
+ 5 APPPATH\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\UNU\\Pelajaran\\Semester 4\\PBO\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ERROR - 2023-07-27 11:50:57 --> mysqli_sql_exception: Unknown column 'fakultas.id_ruangan' in 'on clause' in E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+#6 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#7 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('E:\\UNU\\Pelajara...')
+#11 {main}
+CRITICAL - 2023-07-27 11:50:57 --> Unknown column 'fakultas.id_ruangan' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', [], false)
+ 5 APPPATH\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\UNU\\Pelajaran\\Semester 4\\PBO\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ERROR - 2023-07-27 11:50:57 --> mysqli_sql_exception: Unknown column 'fakultas.id_ruangan' in 'on clause' in E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+#6 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#7 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('E:\\UNU\\Pelajara...')
+#11 {main}
+CRITICAL - 2023-07-27 11:50:57 --> Unknown column 'fakultas.id_ruangan' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', [], false)
+ 5 APPPATH\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\UNU\\Pelajaran\\Semester 4\\PBO\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ERROR - 2023-07-27 11:51:57 --> mysqli_sql_exception: Can't DROP FOREIGN KEY `fakultas_id_ruangan_foreign`; check that it exists in E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('ALTER TABLE `fa...', 0)
+#1 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('ALTER TABLE `fa...')
+#2 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('ALTER TABLE `fa...')
+#3 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\Forge.php(517): CodeIgniter\Database\BaseConnection->query('ALTER TABLE `fa...')
+#4 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Database\Migrations\2023-07-25-072915_FakultasMigration.php(47): CodeIgniter\Database\Forge->dropForeignKey('fakultas', 'fakultas_id_rua...')
+#5 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MigrationRunner.php(877): App\Database\Migrations\FakultasMigration->down()
+#6 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MigrationRunner.php(299): CodeIgniter\Database\MigrationRunner->migrate('down', Object(stdClass))
+#7 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Commands\Database\MigrateRollback.php(92): CodeIgniter\Database\MigrationRunner->regress(0)
+#8 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRollback->run(Array)
+#9 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CLI\BaseCommand.php(114): CodeIgniter\CLI\Commands->run('migrate:rollbac...', Array)
+#10 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Commands\Database\MigrateRefresh.php(84): CodeIgniter\CLI\BaseCommand->call('migrate:rollbac...', Array)
+#11 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\spark(97): CodeIgniter\CLI\Console->run()
+#14 {main}
+ERROR - 2023-07-27 11:52:36 --> mysqli_sql_exception: Unknown column 'fakultas.id_ruangan' in 'on clause' in E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+#6 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#7 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('E:\\UNU\\Pelajara...')
+#11 {main}
+CRITICAL - 2023-07-27 11:52:36 --> Unknown column 'fakultas.id_ruangan' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', [], false)
+ 5 APPPATH\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\UNU\\Pelajaran\\Semester 4\\PBO\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ERROR - 2023-07-27 11:52:37 --> mysqli_sql_exception: Unknown column 'fakultas.id_ruangan' in 'on clause' in E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+#6 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#7 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('E:\\UNU\\Pelajara...')
+#11 {main}
+CRITICAL - 2023-07-27 11:52:37 --> Unknown column 'fakultas.id_ruangan' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', [], false)
+ 5 APPPATH\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\UNU\\Pelajaran\\Semester 4\\PBO\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ERROR - 2023-07-27 11:54:38 --> mysqli_sql_exception: Unknown column 'fakultas.id_ruangan' in 'on clause' in E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+#6 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#7 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('E:\\UNU\\Pelajara...')
+#11 {main}
+CRITICAL - 2023-07-27 11:54:38 --> Unknown column 'fakultas.id_ruangan' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', [], false)
+ 5 APPPATH\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\UNU\\Pelajaran\\Semester 4\\PBO\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ERROR - 2023-07-27 11:54:38 --> mysqli_sql_exception: Unknown column 'fakultas.id_ruangan' in 'on clause' in E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+#6 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#7 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('E:\\UNU\\Pelajara...')
+#11 {main}
+CRITICAL - 2023-07-27 11:54:38 --> Unknown column 'fakultas.id_ruangan' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', [], false)
+ 5 APPPATH\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\UNU\\Pelajaran\\Semester 4\\PBO\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ERROR - 2023-07-27 11:54:39 --> mysqli_sql_exception: Unknown column 'fakultas.id_ruangan' in 'on clause' in E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+#6 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#7 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('E:\\UNU\\Pelajara...')
+#11 {main}
+CRITICAL - 2023-07-27 11:54:39 --> Unknown column 'fakultas.id_ruangan' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', [], false)
+ 5 APPPATH\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\UNU\\Pelajaran\\Semester 4\\PBO\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ERROR - 2023-07-27 11:54:40 --> mysqli_sql_exception: Unknown column 'fakultas.id_ruangan' in 'on clause' in E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+#6 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#7 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('E:\\UNU\\Pelajara...')
+#11 {main}
+CRITICAL - 2023-07-27 11:54:40 --> Unknown column 'fakultas.id_ruangan' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', [], false)
+ 5 APPPATH\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\UNU\\Pelajaran\\Semester 4\\PBO\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ERROR - 2023-07-27 11:54:53 --> mysqli_sql_exception: Can't DROP FOREIGN KEY `fakultas_id_ruangan_foreign`; check that it exists in E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('ALTER TABLE `fa...', 0)
+#1 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('ALTER TABLE `fa...')
+#2 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('ALTER TABLE `fa...')
+#3 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\Forge.php(517): CodeIgniter\Database\BaseConnection->query('ALTER TABLE `fa...')
+#4 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Database\Migrations\2023-07-25-072915_FakultasMigration.php(47): CodeIgniter\Database\Forge->dropForeignKey('fakultas', 'fakultas_id_rua...')
+#5 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MigrationRunner.php(877): App\Database\Migrations\FakultasMigration->down()
+#6 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MigrationRunner.php(299): CodeIgniter\Database\MigrationRunner->migrate('down', Object(stdClass))
+#7 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Commands\Database\MigrateRollback.php(92): CodeIgniter\Database\MigrationRunner->regress(0)
+#8 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRollback->run(Array)
+#9 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CLI\BaseCommand.php(114): CodeIgniter\CLI\Commands->run('migrate:rollbac...', Array)
+#10 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Commands\Database\MigrateRefresh.php(84): CodeIgniter\CLI\BaseCommand->call('migrate:rollbac...', Array)
+#11 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\spark(97): CodeIgniter\CLI\Console->run()
+#14 {main}
+ERROR - 2023-07-27 11:56:05 --> mysqli_sql_exception: Unknown column 'fakultas.id_ruangan' in 'on clause' in E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+#6 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#7 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('E:\\UNU\\Pelajara...')
+#11 {main}
+CRITICAL - 2023-07-27 11:56:05 --> Unknown column 'fakultas.id_ruangan' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', [], false)
+ 5 APPPATH\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\UNU\\Pelajaran\\Semester 4\\PBO\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ERROR - 2023-07-27 11:56:06 --> mysqli_sql_exception: Unknown column 'fakultas.id_ruangan' in 'on clause' in E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+#6 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#7 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('E:\\UNU\\Pelajara...')
+#11 {main}
+CRITICAL - 2023-07-27 11:56:06 --> Unknown column 'fakultas.id_ruangan' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', [], false)
+ 5 APPPATH\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\UNU\\Pelajaran\\Semester 4\\PBO\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ERROR - 2023-07-27 11:56:06 --> mysqli_sql_exception: Unknown column 'fakultas.id_ruangan' in 'on clause' in E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+#6 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#7 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('E:\\UNU\\Pelajara...')
+#11 {main}
+CRITICAL - 2023-07-27 11:56:06 --> Unknown column 'fakultas.id_ruangan' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', [], false)
+ 5 APPPATH\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\UNU\\Pelajaran\\Semester 4\\PBO\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ERROR - 2023-07-27 11:56:07 --> mysqli_sql_exception: Unknown column 'fakultas.id_ruangan' in 'on clause' in E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+#6 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#7 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('E:\\UNU\\Pelajara...')
+#11 {main}
+CRITICAL - 2023-07-27 11:56:07 --> Unknown column 'fakultas.id_ruangan' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', [], false)
+ 5 APPPATH\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\UNU\\Pelajaran\\Semester 4\\PBO\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ERROR - 2023-07-27 12:04:14 --> mysqli_sql_exception: Unknown column 'fakultas.id_ruangan' in 'on clause' in E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+#6 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#7 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('E:\\UNU\\Pelajara...')
+#11 {main}
+CRITICAL - 2023-07-27 12:04:14 --> Unknown column 'fakultas.id_ruangan' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', [], false)
+ 5 APPPATH\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\UNU\\Pelajaran\\Semester 4\\PBO\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ERROR - 2023-07-27 12:04:15 --> mysqli_sql_exception: Unknown column 'fakultas.id_ruangan' in 'on clause' in E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+#6 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#7 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('E:\\UNU\\Pelajara...')
+#11 {main}
+CRITICAL - 2023-07-27 12:04:15 --> Unknown column 'fakultas.id_ruangan' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', [], false)
+ 5 APPPATH\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\UNU\\Pelajaran\\Semester 4\\PBO\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ERROR - 2023-07-27 12:04:15 --> mysqli_sql_exception: Unknown column 'fakultas.id_ruangan' in 'on clause' in E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+#6 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#7 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('E:\\UNU\\Pelajara...')
+#11 {main}
+CRITICAL - 2023-07-27 12:04:15 --> Unknown column 'fakultas.id_ruangan' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', [], false)
+ 5 APPPATH\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\UNU\\Pelajaran\\Semester 4\\PBO\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ERROR - 2023-07-27 12:04:16 --> mysqli_sql_exception: Unknown column 'fakultas.id_ruangan' in 'on clause' in E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+#6 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#7 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('E:\\UNU\\Pelajara...')
+#11 {main}
+CRITICAL - 2023-07-27 12:04:16 --> Unknown column 'fakultas.id_ruangan' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', [], false)
+ 5 APPPATH\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\UNU\\Pelajaran\\Semester 4\\PBO\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ERROR - 2023-07-27 12:04:41 --> mysqli_sql_exception: Unknown column 'fakultas.id_ruangan' in 'on clause' in E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+#6 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#7 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('E:\\UNU\\Pelajara...')
+#11 {main}
+CRITICAL - 2023-07-27 12:04:41 --> Unknown column 'fakultas.id_ruangan' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', [], false)
+ 5 APPPATH\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\UNU\\Pelajaran\\Semester 4\\PBO\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ERROR - 2023-07-27 12:04:42 --> mysqli_sql_exception: Unknown column 'fakultas.id_ruangan' in 'on clause' in E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+#6 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#7 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('E:\\UNU\\Pelajara...')
+#11 {main}
+CRITICAL - 2023-07-27 12:04:42 --> Unknown column 'fakultas.id_ruangan' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', [], false)
+ 5 APPPATH\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\UNU\\Pelajaran\\Semester 4\\PBO\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ERROR - 2023-07-27 12:04:42 --> mysqli_sql_exception: Unknown column 'fakultas.id_ruangan' in 'on clause' in E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+#6 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#7 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('E:\\UNU\\Pelajara...')
+#11 {main}
+CRITICAL - 2023-07-27 12:04:42 --> Unknown column 'fakultas.id_ruangan' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', [], false)
+ 5 APPPATH\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\UNU\\Pelajaran\\Semester 4\\PBO\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ERROR - 2023-07-27 12:04:43 --> mysqli_sql_exception: Unknown column 'fakultas.id_ruangan' in 'on clause' in E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+#6 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#7 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('E:\\UNU\\Pelajara...')
+#11 {main}
+CRITICAL - 2023-07-27 12:04:43 --> Unknown column 'fakultas.id_ruangan' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', [], false)
+ 5 APPPATH\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\UNU\\Pelajaran\\Semester 4\\PBO\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ERROR - 2023-07-27 12:04:53 --> mysqli_sql_exception: Unknown column 'fakultas.id_ruangan' in 'on clause' in E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+#6 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#7 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('E:\\UNU\\Pelajara...')
+#11 {main}
+CRITICAL - 2023-07-27 12:04:53 --> Unknown column 'fakultas.id_ruangan' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', [], false)
+ 5 APPPATH\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\UNU\\Pelajaran\\Semester 4\\PBO\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ERROR - 2023-07-27 12:04:53 --> mysqli_sql_exception: Unknown column 'fakultas.id_ruangan' in 'on clause' in E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+#6 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#7 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('E:\\UNU\\Pelajara...')
+#11 {main}
+CRITICAL - 2023-07-27 12:04:53 --> Unknown column 'fakultas.id_ruangan' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', [], false)
+ 5 APPPATH\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\UNU\\Pelajaran\\Semester 4\\PBO\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ERROR - 2023-07-27 12:05:14 --> mysqli_sql_exception: Unknown column 'fakultas.id_ruangan' in 'on clause' in E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+#6 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#7 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('E:\\UNU\\Pelajara...')
+#11 {main}
+CRITICAL - 2023-07-27 12:05:14 --> Unknown column 'fakultas.id_ruangan' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', [], false)
+ 5 APPPATH\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\UNU\\Pelajaran\\Semester 4\\PBO\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ERROR - 2023-07-27 12:05:14 --> mysqli_sql_exception: Unknown column 'fakultas.id_ruangan' in 'on clause' in E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+#6 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#7 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('E:\\UNU\\Pelajara...')
+#11 {main}
+CRITICAL - 2023-07-27 12:05:14 --> Unknown column 'fakultas.id_ruangan' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', [], false)
+ 5 APPPATH\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\UNU\\Pelajaran\\Semester 4\\PBO\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ERROR - 2023-07-27 12:06:12 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'fakultas' in E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'fakultas', 3306, '', 0)
+#1 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(1409): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(1428): CodeIgniter\Database\BaseConnection->listTables()
+#5 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'fakultas' in E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(1409): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(1428): CodeIgniter\Database\BaseConnection->listTables()
+#4 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\spark(97): CodeIgniter\CLI\Console->run()
+#10 {main}
+ERROR - 2023-07-27 12:06:57 --> mysqli_sql_exception: Unknown column 'fakultas.id_ruangan' in 'on clause' in E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+#6 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#7 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('E:\\UNU\\Pelajara...')
+#11 {main}
+CRITICAL - 2023-07-27 12:06:57 --> Unknown column 'fakultas.id_ruangan' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', [], false)
+ 5 APPPATH\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\UNU\\Pelajaran\\Semester 4\\PBO\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ERROR - 2023-07-27 12:06:58 --> mysqli_sql_exception: Unknown column 'fakultas.id_ruangan' in 'on clause' in E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+#6 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#7 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('E:\\UNU\\Pelajara...')
+#11 {main}
+CRITICAL - 2023-07-27 12:06:58 --> Unknown column 'fakultas.id_ruangan' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', [], false)
+ 5 APPPATH\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\UNU\\Pelajaran\\Semester 4\\PBO\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ERROR - 2023-07-27 12:07:01 --> mysqli_sql_exception: Unknown column 'fakultas.id_ruangan' in 'on clause' in E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+#6 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#7 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('E:\\UNU\\Pelajara...')
+#11 {main}
+CRITICAL - 2023-07-27 12:07:01 --> Unknown column 'fakultas.id_ruangan' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', [], false)
+ 5 APPPATH\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\UNU\\Pelajaran\\Semester 4\\PBO\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ERROR - 2023-07-27 12:07:01 --> mysqli_sql_exception: Unknown column 'fakultas.id_ruangan' in 'on clause' in E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+#6 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#7 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('E:\\UNU\\Pelajara...')
+#11 {main}
+CRITICAL - 2023-07-27 12:07:01 --> Unknown column 'fakultas.id_ruangan' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', [], false)
+ 5 APPPATH\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\UNU\\Pelajaran\\Semester 4\\PBO\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ERROR - 2023-07-27 12:10:48 --> mysqli_sql_exception: Unknown column 'fakultas.id_ruangan' in 'on clause' in E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+#6 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#7 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('E:\\UNU\\Pelajara...')
+#11 {main}
+CRITICAL - 2023-07-27 12:10:48 --> Unknown column 'fakultas.id_ruangan' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', [], false)
+ 5 APPPATH\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\UNU\\Pelajaran\\Semester 4\\PBO\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ERROR - 2023-07-27 12:10:48 --> mysqli_sql_exception: Unknown column 'fakultas.id_ruangan' in 'on clause' in E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+#6 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#7 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('E:\\UNU\\Pelajara...')
+#11 {main}
+CRITICAL - 2023-07-27 12:10:48 --> Unknown column 'fakultas.id_ruangan' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', [], false)
+ 5 APPPATH\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\UNU\\Pelajaran\\Semester 4\\PBO\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ERROR - 2023-07-27 12:10:52 --> mysqli_sql_exception: Unknown column 'fakultas.id_ruangan' in 'on clause' in E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+#6 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#7 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('E:\\UNU\\Pelajara...')
+#11 {main}
+CRITICAL - 2023-07-27 12:10:52 --> Unknown column 'fakultas.id_ruangan' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', [], false)
+ 5 APPPATH\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\UNU\\Pelajaran\\Semester 4\\PBO\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ERROR - 2023-07-27 12:10:53 --> mysqli_sql_exception: Unknown column 'fakultas.id_ruangan' in 'on clause' in E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\app\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+#6 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#7 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 E:\UNU\Pelajaran\Semester 4\PBO\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('E:\\UNU\\Pelajara...')
+#11 {main}
+CRITICAL - 2023-07-27 12:10:53 --> Unknown column 'fakultas.id_ruangan' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', [], false)
+ 5 APPPATH\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\UNU\\Pelajaran\\Semester 4\\PBO\\uas_pbo_kel_3_fakultas\\public\\index.php')
+INFO - 2023-07-27 12:12:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-27 12:19:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
