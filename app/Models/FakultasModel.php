@@ -7,8 +7,13 @@ use CodeIgniter\Model;
 class FakultasModel extends Model
 {
     protected $table = 'fakultas';
+<<<<<<< HEAD
     protected $primaryKey = 'id';
     protected $allowedFields = ['kd_fakultas', 'nama_fakultas'];
+=======
+    protected $primaryKey = 'id_fakultas';
+    protected $allowedFields = ['kd_fakultas', 'nama_fakultas', 'id_ruangan', 'id_prodi'];
+>>>>>>> origin/alfin
 
     function countFakultasData()
     {
@@ -17,7 +22,7 @@ class FakultasModel extends Model
 
     function generateKodeFakultas()
     {
-        $lastKode = $this->orderBy('id', 'DESC')->first();
+        $lastKode = $this->orderBy('id_fakultas', 'DESC')->first();
 
         if ($lastKode) {
             $getKode = $lastKode['kd_fakultas'];
@@ -29,5 +34,15 @@ class FakultasModel extends Model
         }
 
         return $newKodeFakultas;
+    }
+
+
+    function getData()
+    {
+        $builder = $this->db->table('fakultas')
+            ->join('ruangan', 'ruangan.id_ruangan = fakultas.id_ruangan')
+            ->join('prodi', 'prodi.id_prodi = fakultas.id_prodi')
+            ->get()->getResult();
+        return $builder;
     }
 }

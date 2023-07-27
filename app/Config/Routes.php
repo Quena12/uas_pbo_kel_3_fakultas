@@ -33,7 +33,7 @@ $routes->set404Override();
 //fakultas
 $routes->get('/', 'Home::index');
 $routes->get('/fakultas', 'Fakultas::index');
-$routes->post('/fakultas/addfakultas', 'Fakultas::create');
+$routes->post('/fakultas/addfakultas', 'Fakultas::createNewFakultas');
 $routes->get('/fakultas/deletefakultas/(:num)', 'Fakultas::delete/$1');
 $routes->get('/fakultas/editfakultas/(:num)', 'Fakultas::edit/$1');
 $routes->post('/fakultas/editfakultas/(:num)', 'Fakultas::update/$1');
@@ -48,6 +48,7 @@ $routes->get('/ruangan/deleteruangan/(:num)', 'RuanganController::deleteRuangan/
 
 //prodi
 $routes->get('/prodi', 'ProdiController::index');
+<<<<<<< HEAD
 $routes->post('/prodi/addprodi', 'ProdiController::addProdi');
 $routes->get('/prodi/editprodi/(:num)', 'ProdiController::editProdi/$1');
 $routes->post('/prodi/editprodi/(:num)', 'ProdiController::editProdi/$1');
@@ -59,6 +60,12 @@ $routes->post('/kelas/adddkelas', 'KelasController::addKelas');
 $routes->get('/kelas/editkelas/(:num)', 'KelasController::editKelas/$1');
 $routes->post('/kelas/editkelas/(:num)', 'KelasController::editKelas/$1');
 $routes->get('/kelas/deletekelas/(:num)', 'KelasController::deleteKelas/$1');
+=======
+$routes->post('/prodi/adddprodi', 'ProdiController::create');
+$routes->get('/prodi/editprodi/(:num)', 'ProdiController::editProdi/$1');
+$routes->post('/prodi/editprodi/(:num)', 'ProdiController::editProdi/$1');
+$routes->get('/prodi/deleteprodi/(:num)', 'ProdiController::delete/$1');
+>>>>>>> origin/alfin
 /*
  * --------------------------------------------------------------------
  * Additional Routing

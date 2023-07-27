@@ -8,3 +8,4 @@
 <link rel="shortcut icon" href="/template/dist/assets/images/logo/favicon.png" type="image/png">
 
 <link rel="stylesheet" href="/template/dist/assets/css/shared/iconly.css">
+<link rel="stylesheet" href="/template/dist/assets/extensions/choices.js/public/assets/styles/choices.css">
