@@ -45,7 +45,7 @@
                                     </div>
                                     <div class="col-md-8">
                                         <div class="form-group">
-                                            <select class="choices form-select multiple-remove" multiple="multiple" name="id_prodi">
+                                            <select class="choices form-select multiple-remove" multiple="multiple" name="id_prodi[]">
                                                 <?php foreach ($prodi as $key) : ?>
                                                     <option value="<?= $key['id_prodi'] ?>"><?= $key['nama_prodi'] ?></option>
                                                 <?php endforeach; ?>
