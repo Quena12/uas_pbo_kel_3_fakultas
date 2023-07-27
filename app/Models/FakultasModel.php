@@ -7,13 +7,8 @@ use CodeIgniter\Model;
 class FakultasModel extends Model
 {
     protected $table = 'fakultas';
-<<<<<<< HEAD
-    protected $primaryKey = 'id';
-    protected $allowedFields = ['kd_fakultas', 'nama_fakultas'];
-=======
     protected $primaryKey = 'id_fakultas';
     protected $allowedFields = ['kd_fakultas', 'nama_fakultas', 'id_ruangan', 'id_prodi'];
->>>>>>> origin/alfin
 
     function countFakultasData()
     {
