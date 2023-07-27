@@ -77,7 +77,8 @@
                                             <th>NO</th>
                                             <th>KODE FAKULTAS</th>
                                             <th>NAMA FAKULTAS</th>
-                                            <th>RUANGAN FAKULTAS</th>
+                                            <th>KODE KANTOR FAKULTAS</th>
+                                            <th>KANTOR FAKULTAS</th>
                                         </tr>
                                     </thead>
                                     <?php $no = 1 ?>
@@ -87,6 +88,7 @@
                                                 <td><?= $no++ ?> </td>
                                                 <td><?= $fakultas->kd_fakultas ?> </td>
                                                 <td><?= $fakultas->nama_fakultas ?> </td>
+                                                <td><?= $fakultas->kd_ruangan ?> </td>
                                                 <td><?= $fakultas->nama_ruangan ?> </td>
                                             </tr>
                                         </tbody>

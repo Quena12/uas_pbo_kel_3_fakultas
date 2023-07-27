@@ -1,525 +1,346 @@
-ERROR - 2023-07-27 04:07:59 --> mysqli_sql_exception: Unknown column 'fakultas.id_fakultas' in 'field list' in C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+CRITICAL - 2023-07-27 00:37:49 --> Attempt to read property "id_ruangan" on array
+in APPPATH\Views\fakultas\index.php on line 50.
+ 1 APPPATH\Views\fakultas\index.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id_ruangan" on array', 'C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\app\\Views\\fakultas\\index.php', 50)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\app\\Views\\fakultas\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('fakultas/index', [], true)
+ 5 APPPATH\Controllers\Fakultas.php(34): view('fakultas/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Fakultas->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fakultas))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+CRITICAL - 2023-07-27 00:38:11 --> Attempt to read property "id_ruangan" on array
+in APPPATH\Views\fakultas\index.php on line 50.
+ 1 APPPATH\Views\fakultas\index.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id_ruangan" on array', 'C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\app\\Views\\fakultas\\index.php', 50)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\app\\Views\\fakultas\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('fakultas/index', [], true)
+ 5 APPPATH\Controllers\Fakultas.php(34): view('fakultas/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Fakultas->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fakultas))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ERROR - 2023-07-27 00:50:07 --> mysqli_sql_exception: Can't create table `fakultas`.`fakultas` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
 Stack trace:
-#0 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `fakulta...', 0)
-#1 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `fakulta...')
-#2 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fakulta...')
-#3 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `fakulta...', Array, false)
-#4 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Models\FakultasModel.php(37): CodeIgniter\Database\BaseBuilder->get()
-#5 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Controllers\Home.php(20): App\Models\FakultasModel->getData()
-#6 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Home->index()
-#7 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
-#8 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#9 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
-#10 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\62823\\...')
-#11 {main}
-CRITICAL - 2023-07-27 04:07:59 --> Unknown column 'fakultas.id_fakultas' in 'field list'
-in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
- 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
-FROM `fakultas`
-JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`', 0)
- 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
-FROM `fakultas`
-JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`')
- 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
-FROM `fakultas`
-JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`')
- 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
-FROM `fakultas`
-JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`', [], false)
- 5 APPPATH\Models\FakultasModel.php(37): CodeIgniter\Database\BaseBuilder->get()
- 6 APPPATH\Controllers\Home.php(20): App\Models\FakultasModel->getData()
- 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
- 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
- 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
-10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\62823\\OneDrive\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
-ERROR - 2023-07-27 04:08:00 --> mysqli_sql_exception: Unknown column 'fakultas.id_fakultas' in 'field list' in C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+#0 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `f...', 0)
+#1 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `f...')
+#2 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `f...')
+#3 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `f...')
+#4 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Database\Migrations\2023-07-25-072915_FakultasMigration.php(41): CodeIgniter\Database\Forge->createTable('fakultas', true)
+#5 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MigrationRunner.php(877): App\Database\Migrations\FakultasMigration->up()
+#6 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CLI\BaseCommand.php(114): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Database\MigrateRefresh.php(85): CodeIgniter\CLI\BaseCommand->call('migrate', Array)
+#11 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\spark(97): CodeIgniter\CLI\Console->run()
+#14 {main}
+ERROR - 2023-07-27 00:54:49 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0, 1, 2, 3) VALUES (:0:, :1:, :2:, :3:)' at line 1 in C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
 Stack trace:
-#0 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `fakulta...', 0)
-#1 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `fakulta...')
-#2 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fakulta...')
-#3 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `fakulta...', Array, false)
-#4 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Models\FakultasModel.php(37): CodeIgniter\Database\BaseBuilder->get()
-#5 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Controllers\Home.php(20): App\Models\FakultasModel->getData()
-#6 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Home->index()
-#7 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
-#8 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#9 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
-#10 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\62823\\...')
-#11 {main}
-CRITICAL - 2023-07-27 04:08:00 --> Unknown column 'fakultas.id_fakultas' in 'field list'
-in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
- 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
-FROM `fakultas`
-JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`', 0)
- 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
-FROM `fakultas`
-JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`')
- 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
-FROM `fakultas`
-JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`')
- 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
-FROM `fakultas`
-JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`', [], false)
- 5 APPPATH\Models\FakultasModel.php(37): CodeIgniter\Database\BaseBuilder->get()
- 6 APPPATH\Controllers\Home.php(20): App\Models\FakultasModel->getData()
- 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
- 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
- 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
-10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\62823\\OneDrive\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
-ERROR - 2023-07-27 04:08:00 --> mysqli_sql_exception: Unknown column 'fakultas.id_fakultas' in 'field list' in C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+#0 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fa...', 0)
+#1 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fa...')
+#2 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fa...')
+#3 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fa...', Array, false)
+#4 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Database\Seeds\ProdiSeeder.php(33): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\Seeder.php(146): App\Database\Seeds\ProdiSeeder->run()
+#6 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#7 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#8 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#9 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\spark(97): CodeIgniter\CLI\Console->run()
+#10 {main}
+ERROR - 2023-07-27 00:55:08 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0, 1, 2, 3) VALUES (:0:, :1:, :2:, :3:)' at line 1 in C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
 Stack trace:
-#0 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `fakulta...', 0)
-#1 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `fakulta...')
-#2 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fakulta...')
-#3 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `fakulta...', Array, false)
-#4 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Models\FakultasModel.php(37): CodeIgniter\Database\BaseBuilder->get()
-#5 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Controllers\Home.php(20): App\Models\FakultasModel->getData()
-#6 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Home->index()
-#7 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
-#8 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#9 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
-#10 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\62823\\...')
-#11 {main}
-CRITICAL - 2023-07-27 04:08:00 --> Unknown column 'fakultas.id_fakultas' in 'field list'
-in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
- 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
-FROM `fakultas`
-JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`', 0)
- 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
-FROM `fakultas`
-JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`')
- 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
-FROM `fakultas`
-JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`')
- 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
-FROM `fakultas`
-JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`', [], false)
- 5 APPPATH\Models\FakultasModel.php(37): CodeIgniter\Database\BaseBuilder->get()
- 6 APPPATH\Controllers\Home.php(20): App\Models\FakultasModel->getData()
- 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
- 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
- 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
-10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\62823\\OneDrive\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
-ERROR - 2023-07-27 04:08:04 --> mysqli_sql_exception: Unknown column 'fakultas.id_fakultas' in 'field list' in C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+#0 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fa...', 0)
+#1 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fa...')
+#2 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fa...')
+#3 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fa...', Array, false)
+#4 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Database\Seeds\ProdiSeeder.php(33): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\Seeder.php(146): App\Database\Seeds\ProdiSeeder->run()
+#6 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#7 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#8 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#9 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\spark(97): CodeIgniter\CLI\Console->run()
+#10 {main}
+ERROR - 2023-07-27 01:05:10 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`fakultas`.`fakultas`, CONSTRAINT `fakultas_id_prodi_foreign` FOREIGN KEY (`id_prodi`) REFERENCES `prodi` (`id_prodi`)) in C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
 Stack trace:
-#0 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `fakulta...', 0)
-#1 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `fakulta...')
-#2 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fakulta...')
-#3 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `fakulta...', Array, false)
-#4 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Models\FakultasModel.php(37): CodeIgniter\Database\BaseBuilder->get()
-#5 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Controllers\Home.php(20): App\Models\FakultasModel->getData()
-#6 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Home->index()
-#7 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
-#8 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#9 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
-#10 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\62823\\...')
-#11 {main}
-CRITICAL - 2023-07-27 04:08:04 --> Unknown column 'fakultas.id_fakultas' in 'field list'
+#0 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fa...', 0)
+#1 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fa...')
+#2 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fa...')
+#3 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fa...', Array, false)
+#4 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Controllers\Fakultas.php(50): CodeIgniter\Model->insert(Array)
+#8 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Fakultas->createNewFakultas()
+#9 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fakultas))
+#10 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMM...')
+#13 {main}
+CRITICAL - 2023-07-27 01:05:10 --> Cannot add or update a child row: a foreign key constraint fails (`fakultas`.`fakultas`, CONSTRAINT `fakultas_id_prodi_foreign` FOREIGN KEY (`id_prodi`) REFERENCES `prodi` (`id_prodi`))
 in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
- 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
-FROM `fakultas`
-JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`', 0)
- 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
-FROM `fakultas`
-JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`')
- 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
-FROM `fakultas`
-JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`')
- 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
-FROM `fakultas`
-JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`', [], false)
- 5 APPPATH\Models\FakultasModel.php(37): CodeIgniter\Database\BaseBuilder->get()
- 6 APPPATH\Controllers\Home.php(20): App\Models\FakultasModel->getData()
- 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
- 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
- 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
-10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\62823\\OneDrive\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
-ERROR - 2023-07-27 04:08:06 --> mysqli_sql_exception: Unknown column 'fakultas.id_fakultas' in 'field list' in C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`) VALUES (\'F017001\', \'Teknologi Informasi\', \'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`) VALUES (\'F017001\', \'Teknologi Informasi\', \'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`) VALUES (\'F017001\', \'Teknologi Informasi\', \'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`) VALUES (:kd_fakultas:, :nama_fakultas:, :id_ruangan:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Fakultas.php(50): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Fakultas->createNewFakultas()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fakultas))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ERROR - 2023-07-27 01:06:08 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`fakultas`.`fakultas`, CONSTRAINT `fakultas_id_prodi_foreign` FOREIGN KEY (`id_prodi`) REFERENCES `prodi` (`id_prodi`)) in C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
 Stack trace:
-#0 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `fakulta...', 0)
-#1 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `fakulta...')
-#2 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fakulta...')
-#3 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `fakulta...', Array, false)
-#4 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Models\FakultasModel.php(37): CodeIgniter\Database\BaseBuilder->get()
-#5 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Controllers\Home.php(20): App\Models\FakultasModel->getData()
-#6 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Home->index()
-#7 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
-#8 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#9 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
-#10 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\62823\\...')
-#11 {main}
-CRITICAL - 2023-07-27 04:08:06 --> Unknown column 'fakultas.id_fakultas' in 'field list'
+#0 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fa...', 0)
+#1 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fa...')
+#2 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fa...')
+#3 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fa...', Array, false)
+#4 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Controllers\Fakultas.php(50): CodeIgniter\Model->insert(Array)
+#8 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Fakultas->createNewFakultas()
+#9 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fakultas))
+#10 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMM...')
+#13 {main}
+CRITICAL - 2023-07-27 01:06:08 --> Cannot add or update a child row: a foreign key constraint fails (`fakultas`.`fakultas`, CONSTRAINT `fakultas_id_prodi_foreign` FOREIGN KEY (`id_prodi`) REFERENCES `prodi` (`id_prodi`))
 in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
- 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
-FROM `fakultas`
-JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`', 0)
- 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
-FROM `fakultas`
-JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`')
- 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
-FROM `fakultas`
-JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`')
- 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
-FROM `fakultas`
-JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`', [], false)
- 5 APPPATH\Models\FakultasModel.php(37): CodeIgniter\Database\BaseBuilder->get()
- 6 APPPATH\Controllers\Home.php(20): App\Models\FakultasModel->getData()
- 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
- 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
- 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
-10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\62823\\OneDrive\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
-ERROR - 2023-07-27 04:08:27 --> mysqli_sql_exception: Unknown column 'fakultas.id_fakultas' in 'field list' in C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`) VALUES (\'F017001\', \'Teknologi Informasi\', \'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`) VALUES (\'F017001\', \'Teknologi Informasi\', \'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`) VALUES (\'F017001\', \'Teknologi Informasi\', \'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`) VALUES (:kd_fakultas:, :nama_fakultas:, :id_ruangan:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Fakultas.php(50): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Fakultas->createNewFakultas()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fakultas))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ERROR - 2023-07-27 01:10:01 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`fakultas`.`fakultas`, CONSTRAINT `fakultas_id_prodi_foreign` FOREIGN KEY (`id_prodi`) REFERENCES `prodi` (`id_prodi`)) in C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
 Stack trace:
-#0 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `fakulta...', 0)
-#1 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `fakulta...')
-#2 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fakulta...')
-#3 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `fakulta...', Array, false)
-#4 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Models\FakultasModel.php(37): CodeIgniter\Database\BaseBuilder->get()
-#5 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Controllers\Home.php(20): App\Models\FakultasModel->getData()
-#6 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Home->index()
-#7 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
-#8 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#9 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
-#10 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\62823\\...')
-#11 {main}
-CRITICAL - 2023-07-27 04:08:27 --> Unknown column 'fakultas.id_fakultas' in 'field list'
+#0 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fa...', 0)
+#1 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fa...')
+#2 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fa...')
+#3 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fa...', Array, false)
+#4 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Controllers\Fakultas.php(50): CodeIgniter\Model->insert(Array)
+#8 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Fakultas->createNewFakultas()
+#9 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fakultas))
+#10 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMM...')
+#13 {main}
+CRITICAL - 2023-07-27 01:10:01 --> Cannot add or update a child row: a foreign key constraint fails (`fakultas`.`fakultas`, CONSTRAINT `fakultas_id_prodi_foreign` FOREIGN KEY (`id_prodi`) REFERENCES `prodi` (`id_prodi`))
 in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
- 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
-FROM `fakultas`
-JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`', 0)
- 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
-FROM `fakultas`
-JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`')
- 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
-FROM `fakultas`
-JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`')
- 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
-FROM `fakultas`
-JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`', [], false)
- 5 APPPATH\Models\FakultasModel.php(37): CodeIgniter\Database\BaseBuilder->get()
- 6 APPPATH\Controllers\Home.php(20): App\Models\FakultasModel->getData()
- 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
- 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
- 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
-10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\62823\\OneDrive\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
-ERROR - 2023-07-27 04:08:30 --> mysqli_sql_exception: Unknown column 'fakultas.id_fakultas' in 'field list' in C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`) VALUES (\'F017001\', \'Teknologi Informasi\', \'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`) VALUES (\'F017001\', \'Teknologi Informasi\', \'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`) VALUES (\'F017001\', \'Teknologi Informasi\', \'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`) VALUES (:kd_fakultas:, :nama_fakultas:, :id_ruangan:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Fakultas.php(50): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Fakultas->createNewFakultas()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fakultas))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ERROR - 2023-07-27 01:10:14 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`fakultas`.`fakultas`, CONSTRAINT `fakultas_id_prodi_foreign` FOREIGN KEY (`id_prodi`) REFERENCES `prodi` (`id_prodi`)) in C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
 Stack trace:
-#0 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `fakulta...', 0)
-#1 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `fakulta...')
-#2 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fakulta...')
-#3 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `fakulta...', Array, false)
-#4 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Models\FakultasModel.php(37): CodeIgniter\Database\BaseBuilder->get()
-#5 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Controllers\Home.php(20): App\Models\FakultasModel->getData()
-#6 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Home->index()
-#7 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
-#8 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#9 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
-#10 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\62823\\...')
-#11 {main}
-CRITICAL - 2023-07-27 04:08:30 --> Unknown column 'fakultas.id_fakultas' in 'field list'
+#0 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fa...', 0)
+#1 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fa...')
+#2 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fa...')
+#3 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fa...', Array, false)
+#4 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Controllers\Fakultas.php(50): CodeIgniter\Model->insert(Array)
+#8 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Fakultas->createNewFakultas()
+#9 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fakultas))
+#10 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMM...')
+#13 {main}
+CRITICAL - 2023-07-27 01:10:14 --> Cannot add or update a child row: a foreign key constraint fails (`fakultas`.`fakultas`, CONSTRAINT `fakultas_id_prodi_foreign` FOREIGN KEY (`id_prodi`) REFERENCES `prodi` (`id_prodi`))
 in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
- 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
-FROM `fakultas`
-JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`', 0)
- 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
-FROM `fakultas`
-JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`')
- 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
-FROM `fakultas`
-JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`')
- 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
-FROM `fakultas`
-JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`', [], false)
- 5 APPPATH\Models\FakultasModel.php(37): CodeIgniter\Database\BaseBuilder->get()
- 6 APPPATH\Controllers\Home.php(20): App\Models\FakultasModel->getData()
- 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
- 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
- 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
-10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\62823\\OneDrive\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
-ERROR - 2023-07-27 04:09:48 --> mysqli_sql_exception: Unknown column 'fakultas.id_fakultas' in 'field list' in C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`) VALUES (\'F017001\', \',lmknjkml,\', \'2\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`) VALUES (\'F017001\', \',lmknjkml,\', \'2\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`) VALUES (\'F017001\', \',lmknjkml,\', \'2\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`) VALUES (:kd_fakultas:, :nama_fakultas:, :id_ruangan:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Fakultas.php(50): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Fakultas->createNewFakultas()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fakultas))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ERROR - 2023-07-27 01:32:36 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`fakultas`.`fakultas`, CONSTRAINT `fakultas_id_prodi_foreign` FOREIGN KEY (`id_prodi`) REFERENCES `prodi` (`id_prodi`)) in C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
 Stack trace:
-#0 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `fakulta...', 0)
-#1 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `fakulta...')
-#2 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fakulta...')
-#3 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `fakulta...', Array, false)
-#4 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Models\FakultasModel.php(37): CodeIgniter\Database\BaseBuilder->get()
-#5 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Controllers\Home.php(20): App\Models\FakultasModel->getData()
-#6 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Home->index()
-#7 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
-#8 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#9 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
-#10 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\62823\\...')
-#11 {main}
-CRITICAL - 2023-07-27 04:09:48 --> Unknown column 'fakultas.id_fakultas' in 'field list'
+#0 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fa...', 0)
+#1 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fa...')
+#2 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fa...')
+#3 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fa...', Array, false)
+#4 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Controllers\Fakultas.php(50): CodeIgniter\Model->insert(Array)
+#8 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Fakultas->createNewFakultas()
+#9 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fakultas))
+#10 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMM...')
+#13 {main}
+CRITICAL - 2023-07-27 01:32:36 --> Cannot add or update a child row: a foreign key constraint fails (`fakultas`.`fakultas`, CONSTRAINT `fakultas_id_prodi_foreign` FOREIGN KEY (`id_prodi`) REFERENCES `prodi` (`id_prodi`))
 in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
- 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
-FROM `fakultas`
-JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`', 0)
- 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
-FROM `fakultas`
-JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`')
- 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
-FROM `fakultas`
-JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`')
- 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
-FROM `fakultas`
-JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`', [], false)
- 5 APPPATH\Models\FakultasModel.php(37): CodeIgniter\Database\BaseBuilder->get()
- 6 APPPATH\Controllers\Home.php(20): App\Models\FakultasModel->getData()
- 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
- 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
- 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
-10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\62823\\OneDrive\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
-ERROR - 2023-07-27 04:09:50 --> mysqli_sql_exception: Unknown column 'fakultas.id_fakultas' in 'field list' in C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`) VALUES (\'F017001\', \',lmknjkml,\', \'2\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`) VALUES (\'F017001\', \',lmknjkml,\', \'2\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`) VALUES (\'F017001\', \',lmknjkml,\', \'2\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`) VALUES (:kd_fakultas:, :nama_fakultas:, :id_ruangan:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Fakultas.php(50): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Fakultas->createNewFakultas()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fakultas))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ERROR - 2023-07-27 01:32:50 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`fakultas`.`fakultas`, CONSTRAINT `fakultas_id_prodi_foreign` FOREIGN KEY (`id_prodi`) REFERENCES `prodi` (`id_prodi`)) in C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
 Stack trace:
-#0 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `fakulta...', 0)
-#1 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `fakulta...')
-#2 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fakulta...')
-#3 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `fakulta...', Array, false)
-#4 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Models\FakultasModel.php(37): CodeIgniter\Database\BaseBuilder->get()
-#5 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Controllers\Home.php(20): App\Models\FakultasModel->getData()
-#6 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Home->index()
-#7 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
-#8 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#9 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
-#10 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\62823\\...')
-#11 {main}
-CRITICAL - 2023-07-27 04:09:50 --> Unknown column 'fakultas.id_fakultas' in 'field list'
+#0 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fa...', 0)
+#1 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fa...')
+#2 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fa...')
+#3 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fa...', Array, false)
+#4 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Controllers\Fakultas.php(50): CodeIgniter\Model->insert(Array)
+#8 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Fakultas->createNewFakultas()
+#9 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fakultas))
+#10 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMM...')
+#13 {main}
+CRITICAL - 2023-07-27 01:32:50 --> Cannot add or update a child row: a foreign key constraint fails (`fakultas`.`fakultas`, CONSTRAINT `fakultas_id_prodi_foreign` FOREIGN KEY (`id_prodi`) REFERENCES `prodi` (`id_prodi`))
 in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
- 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
-FROM `fakultas`
-JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`', 0)
- 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
-FROM `fakultas`
-JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`')
- 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
-FROM `fakultas`
-JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`')
- 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
-FROM `fakultas`
-JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`', [], false)
- 5 APPPATH\Models\FakultasModel.php(37): CodeIgniter\Database\BaseBuilder->get()
- 6 APPPATH\Controllers\Home.php(20): App\Models\FakultasModel->getData()
- 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
- 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
- 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
-10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\62823\\OneDrive\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
-ERROR - 2023-07-27 04:09:51 --> mysqli_sql_exception: Unknown column 'fakultas.id_fakultas' in 'field list' in C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`) VALUES (\'F017001\', \'adad\', \'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`) VALUES (\'F017001\', \'adad\', \'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`) VALUES (\'F017001\', \'adad\', \'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`) VALUES (:kd_fakultas:, :nama_fakultas:, :id_ruangan:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Fakultas.php(50): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Fakultas->createNewFakultas()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fakultas))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ERROR - 2023-07-27 02:04:09 --> mysqli_sql_exception: Operand should contain 1 column(s) in C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
 Stack trace:
-#0 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `fakulta...', 0)
-#1 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `fakulta...')
-#2 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fakulta...')
-#3 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `fakulta...', Array, false)
-#4 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Models\FakultasModel.php(37): CodeIgniter\Database\BaseBuilder->get()
-#5 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Controllers\Home.php(20): App\Models\FakultasModel->getData()
-#6 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Home->index()
-#7 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
-#8 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#9 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
-#10 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\62823\\...')
-#11 {main}
-CRITICAL - 2023-07-27 04:09:51 --> Unknown column 'fakultas.id_fakultas' in 'field list'
+#0 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fa...', 0)
+#1 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fa...')
+#2 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fa...')
+#3 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fa...', Array, false)
+#4 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Controllers\Fakultas.php(50): CodeIgniter\Model->insert(Array)
+#8 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Fakultas->createNewFakultas()
+#9 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fakultas))
+#10 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMM...')
+#13 {main}
+CRITICAL - 2023-07-27 02:04:09 --> Operand should contain 1 column(s)
 in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
- 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
-FROM `fakultas`
-JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`', 0)
- 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
-FROM `fakultas`
-JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`')
- 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
-FROM `fakultas`
-JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`')
- 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
-FROM `fakultas`
-JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`', [], false)
- 5 APPPATH\Models\FakultasModel.php(37): CodeIgniter\Database\BaseBuilder->get()
- 6 APPPATH\Controllers\Home.php(20): App\Models\FakultasModel->getData()
- 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
- 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
- 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
-10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\62823\\OneDrive\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
-ERROR - 2023-07-27 04:10:18 --> mysqli_sql_exception: Unknown column 'fakultas.id_fakultas' in 'field list' in C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`, `id_prodi`) VALUES (\'F017002\', \'nb\', \'2\', (\'1\',\'2\'))', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`, `id_prodi`) VALUES (\'F017002\', \'nb\', \'2\', (\'1\',\'2\'))')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`, `id_prodi`) VALUES (\'F017002\', \'nb\', \'2\', (\'1\',\'2\'))')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`, `id_prodi`) VALUES (:kd_fakultas:, :nama_fakultas:, :id_ruangan:, :id_prodi:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Fakultas.php(50): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Fakultas->createNewFakultas()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fakultas))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ERROR - 2023-07-27 02:07:27 --> mysqli_sql_exception: Column 'id_prodi' cannot be null in C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
 Stack trace:
-#0 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `fakulta...', 0)
-#1 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `fakulta...')
-#2 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fakulta...')
-#3 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `fakulta...', Array, false)
-#4 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Models\FakultasModel.php(37): CodeIgniter\Database\BaseBuilder->get()
-#5 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Controllers\Home.php(20): App\Models\FakultasModel->getData()
-#6 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Home->index()
-#7 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
-#8 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#9 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
-#10 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\62823\\...')
-#11 {main}
-CRITICAL - 2023-07-27 04:10:18 --> Unknown column 'fakultas.id_fakultas' in 'field list'
+#0 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fa...', 0)
+#1 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fa...')
+#2 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fa...')
+#3 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fa...', Array, false)
+#4 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Controllers\Fakultas.php(50): CodeIgniter\Model->insert(Array)
+#8 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Fakultas->createNewFakultas()
+#9 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fakultas))
+#10 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMM...')
+#13 {main}
+CRITICAL - 2023-07-27 02:07:27 --> Column 'id_prodi' cannot be null
 in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
- 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
-FROM `fakultas`
-JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`', 0)
- 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
-FROM `fakultas`
-JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`')
- 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
-FROM `fakultas`
-JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`')
- 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
-FROM `fakultas`
-JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`', [], false)
- 5 APPPATH\Models\FakultasModel.php(37): CodeIgniter\Database\BaseBuilder->get()
- 6 APPPATH\Controllers\Home.php(20): App\Models\FakultasModel->getData()
- 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
- 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
- 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
-10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\62823\\OneDrive\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
-ERROR - 2023-07-27 04:17:34 --> mysqli_sql_exception: Unknown column 'fakultas.id_fakultas' in 'field list' in C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`, `id_prodi`) VALUES (\'F017002\', \'nb\', \'2\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`, `id_prodi`) VALUES (\'F017002\', \'nb\', \'2\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`, `id_prodi`) VALUES (\'F017002\', \'nb\', \'2\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`, `id_prodi`) VALUES (:kd_fakultas:, :nama_fakultas:, :id_ruangan:, :id_prodi:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Fakultas.php(50): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Fakultas->createNewFakultas()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fakultas))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ERROR - 2023-07-27 02:11:54 --> mysqli_sql_exception: Column 'id_prodi' cannot be null in C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
 Stack trace:
-#0 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `fakulta...', 0)
-#1 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `fakulta...')
-#2 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fakulta...')
-#3 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `fakulta...', Array, false)
-#4 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Models\FakultasModel.php(37): CodeIgniter\Database\BaseBuilder->get()
-#5 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Controllers\Home.php(20): App\Models\FakultasModel->getData()
-#6 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Home->index()
-#7 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
-#8 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#9 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
-#10 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\62823\\...')
-#11 {main}
-CRITICAL - 2023-07-27 04:17:34 --> Unknown column 'fakultas.id_fakultas' in 'field list'
+#0 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fa...', 0)
+#1 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fa...')
+#2 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fa...')
+#3 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fa...', Array, false)
+#4 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Controllers\Fakultas.php(50): CodeIgniter\Model->insert(Array)
+#8 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Fakultas->createNewFakultas()
+#9 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fakultas))
+#10 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\MUHAMMAD FAISHAL\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMM...')
+#13 {main}
+CRITICAL - 2023-07-27 02:11:54 --> Column 'id_prodi' cannot be null
 in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
- 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
-FROM `fakultas`
-JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`', 0)
- 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
-FROM `fakultas`
-JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`')
- 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
-FROM `fakultas`
-JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`')
- 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
-FROM `fakultas`
-JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`', [], false)
- 5 APPPATH\Models\FakultasModel.php(37): CodeIgniter\Database\BaseBuilder->get()
- 6 APPPATH\Controllers\Home.php(20): App\Models\FakultasModel->getData()
- 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
- 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
- 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
-10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\62823\\OneDrive\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
-ERROR - 2023-07-27 04:52:57 --> mysqli_sql_exception: Unknown column 'fakultas.id_fakultas' in 'field list' in C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
-Stack trace:
-#0 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `fakulta...', 0)
-#1 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `fakulta...')
-#2 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fakulta...')
-#3 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `fakulta...', Array, false)
-#4 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Models\FakultasModel.php(37): CodeIgniter\Database\BaseBuilder->get()
-#5 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Controllers\Home.php(20): App\Models\FakultasModel->getData()
-#6 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Home->index()
-#7 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
-#8 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#9 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
-#10 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\62823\\...')
-#11 {main}
-CRITICAL - 2023-07-27 04:52:57 --> Unknown column 'fakultas.id_fakultas' in 'field list'
-in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
- 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
-FROM `fakultas`
-JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`', 0)
- 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
-FROM `fakultas`
-JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`')
- 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
-FROM `fakultas`
-JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`')
- 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
-FROM `fakultas`
-JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`', [], false)
- 5 APPPATH\Models\FakultasModel.php(37): CodeIgniter\Database\BaseBuilder->get()
- 6 APPPATH\Controllers\Home.php(20): App\Models\FakultasModel->getData()
- 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
- 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
- 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
-10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\62823\\OneDrive\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
-ERROR - 2023-07-27 04:54:19 --> mysqli_sql_exception: Unknown column 'fakultas.id_fakultas' in 'field list' in C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
-Stack trace:
-#0 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `fakulta...', 0)
-#1 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `fakulta...')
-#2 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fakulta...')
-#3 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `fakulta...', Array, false)
-#4 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Models\FakultasModel.php(37): CodeIgniter\Database\BaseBuilder->get()
-#5 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Controllers\Home.php(20): App\Models\FakultasModel->getData()
-#6 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Home->index()
-#7 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
-#8 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#9 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
-#10 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\62823\\...')
-#11 {main}
-CRITICAL - 2023-07-27 04:54:19 --> Unknown column 'fakultas.id_fakultas' in 'field list'
-in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
- 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
-FROM `fakultas`
-JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`', 0)
- 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
-FROM `fakultas`
-JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`')
- 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
-FROM `fakultas`
-JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`')
- 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
-FROM `fakultas`
-JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`', [], false)
- 5 APPPATH\Models\FakultasModel.php(37): CodeIgniter\Database\BaseBuilder->get()
- 6 APPPATH\Controllers\Home.php(20): App\Models\FakultasModel->getData()
- 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
- 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
- 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
-10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\62823\\OneDrive\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
-ERROR - 2023-07-27 04:54:23 --> mysqli_sql_exception: Unknown column 'fakultas.id_fakultas' in 'field list' in C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
-Stack trace:
-#0 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `fakulta...', 0)
-#1 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `fakulta...')
-#2 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fakulta...')
-#3 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `fakulta...', Array, false)
-#4 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Models\FakultasModel.php(37): CodeIgniter\Database\BaseBuilder->get()
-#5 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Controllers\Home.php(20): App\Models\FakultasModel->getData()
-#6 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Home->index()
-#7 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
-#8 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#9 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
-#10 C:\Users\62823\OneDrive\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\62823\\...')
-#11 {main}
-CRITICAL - 2023-07-27 04:54:23 --> Unknown column 'fakultas.id_fakultas' in 'field list'
-in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
- 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
-FROM `fakultas`
-JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`', 0)
- 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
-FROM `fakultas`
-JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`')
- 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
-FROM `fakultas`
-JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`')
- 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `fakultas`.`id_fakultas`, `fakultas`.`nama_fakultas`, `fakultas`.`kd_fakultas`, `ruangan`.`nama_ruangan`
-FROM `fakultas`
-JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`', [], false)
- 5 APPPATH\Models\FakultasModel.php(37): CodeIgniter\Database\BaseBuilder->get()
- 6 APPPATH\Controllers\Home.php(20): App\Models\FakultasModel->getData()
- 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
- 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
- 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
-10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\62823\\OneDrive\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`, `id_prodi`) VALUES (\'F017003\', \'mmbm\', \'1\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`, `id_prodi`) VALUES (\'F017003\', \'mmbm\', \'1\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`, `id_prodi`) VALUES (\'F017003\', \'mmbm\', \'1\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`, `id_prodi`) VALUES (:kd_fakultas:, :nama_fakultas:, :id_ruangan:, :id_prodi:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Fakultas.php(50): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Fakultas->createNewFakultas()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fakultas))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')

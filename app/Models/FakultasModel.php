@@ -7,8 +7,8 @@ use CodeIgniter\Model;
 class FakultasModel extends Model
 {
     protected $table = 'fakultas';
-    protected $primaryKey = 'id';
-    protected $allowedFields = ['kd_fakultas', 'nama_fakultas', 'id_ruangan'];
+    protected $primaryKey = 'id_fakultas';
+    protected $allowedFields = ['kd_fakultas', 'nama_fakultas', 'id_ruangan', 'id_prodi'];
 
     function countFakultasData()
     {
@@ -34,7 +34,10 @@ class FakultasModel extends Model
 
     function getData()
     {
-        $builder = $this->db->table('fakultas')->select('fakultas.id_fakultas, fakultas.nama_fakultas, fakultas.kd_fakultas, ruangan.nama_ruangan')->join('ruangan', 'ruangan.id_ruangan = fakultas.id_ruangan')->get()->getResult();
+        $builder = $this->db->table('fakultas')
+            ->join('ruangan', 'ruangan.id_ruangan = fakultas.id_ruangan')
+            ->join('prodi', 'prodi.id_prodi = fakultas.id_prodi')
+            ->get()->getResult();
         return $builder;
     }
 }

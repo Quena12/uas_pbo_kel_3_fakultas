@@ -28,16 +28,24 @@ class FakultasMigration extends Migration
                 'unsigned' => true,
                 'constraint' => 20,
             ],
+            'id_prodi' => [
+                'type' => 'BIGINT',
+                'unsigned' => true,
+                'constraint' => 20,
+            ],
         ]);
 
         $this->forge->addKey('id_fakultas', true);
         $this->forge->addForeignKey('id_ruangan', 'ruangan', 'id_ruangan');
+        $this->forge->addForeignKey('id_prodi', 'prodi', 'id_prodi');
         $this->forge->createTable('fakultas', true);
     }
 
     public function down()
     {
+
         $this->forge->dropForeignKey('fakultas', 'fakultas_id_ruangan_foreign');
+        $this->forge->dropForeignKey('fakultas', 'fakultas_id_prodi_foreign	');
         $this->forge->dropTable('fakultas');
     }
 }
