@@ -46,26 +46,19 @@ $routes->post('/ruangan/editruangan/(:num)', 'RuanganController::editRuangan/$1'
 $routes->get('/ruangan/deleteruangan/(:num)', 'RuanganController::deleteRuangan/$1');
 
 
-//prodi
-$routes->get('/prodi', 'ProdiController::index');
-<<<<<<< HEAD
-$routes->post('/prodi/addprodi', 'ProdiController::addProdi');
-$routes->get('/prodi/editprodi/(:num)', 'ProdiController::editProdi/$1');
-$routes->post('/prodi/editprodi/(:num)', 'ProdiController::editProdi/$1');
-$routes->get('/prodi/deleteprodi/(:num)', 'ProdiController::deleteProdi/$1');
-
 //kelas
 $routes->get('/kelas', 'KelasController::index');
 $routes->post('/kelas/adddkelas', 'KelasController::addKelas');
 $routes->get('/kelas/editkelas/(:num)', 'KelasController::editKelas/$1');
 $routes->post('/kelas/editkelas/(:num)', 'KelasController::editKelas/$1');
 $routes->get('/kelas/deletekelas/(:num)', 'KelasController::deleteKelas/$1');
-=======
-$routes->post('/prodi/adddprodi', 'ProdiController::create');
+
+//prodi
+$routes->get('/prodi', 'ProdiController::index');
+$routes->post('/prodi/addprodi', 'ProdiController::addprodi');
 $routes->get('/prodi/editprodi/(:num)', 'ProdiController::editProdi/$1');
 $routes->post('/prodi/editprodi/(:num)', 'ProdiController::editProdi/$1');
-$routes->get('/prodi/deleteprodi/(:num)', 'ProdiController::delete/$1');
->>>>>>> origin/alfin
+$routes->get('/prodi/deleteprodi/(:num)', 'ProdiController::deleteprodi/$1');
 /*
  * --------------------------------------------------------------------
  * Additional Routing
