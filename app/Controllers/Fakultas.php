@@ -1,26 +1,27 @@
 <?php
 
-namespace App\Models;
+namespace App\Controllers;
 
 use App\Models\FakultasModel;
 use App\Models\ProdiModel;
 use App\Models\RuanganModel;
 
-class FakultasModel extends Model
+class Fakultas extends BaseController
 {
+
     protected $fakultasModel;
     protected $ruanganModel;
     protected $prodiModel;
 
-    function countFakultasData()
-    {
+    public function __construct() {
         $this->fakultasModel = new FakultasModel();
         $this->ruanganModel = new RuanganModel();
         $this->prodiModel = new ProdiModel();
     }
+        
 
 
-    function getData()
+    public function index()
     {
 
         //get Ruangan Data
@@ -38,7 +39,7 @@ class FakultasModel extends Model
         return view('fakultas/index', $fakultas);
     }
 
-    function createNewFakultas()
+    public function createNewFakultas()
     {
         $newKodeFakultas = $this->fakultasModel->generateKodeFakultas();
         $data = [
