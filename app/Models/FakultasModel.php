@@ -7,7 +7,7 @@ use CodeIgniter\Model;
 class FakultasModel extends Model
 {
     protected $table = 'fakultas';
-    protected $primaryKey = 'id_fakultas';
+    protected $primaryKey = 'id';
     protected $allowedFields = ['kd_fakultas', 'nama_fakultas', 'id_ruangan'];
 
     function countFakultasData()

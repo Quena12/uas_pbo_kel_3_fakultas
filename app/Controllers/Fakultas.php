@@ -1,98 +1,43 @@
 <?php
 
-namespace App\Controllers;
+namespace App\Models;
 
-use App\Models\FakultasModel;
-use App\Models\RuanganModel;
+use CodeIgniter\Model;
 
-class Fakultas extends BaseController
+class FakultasModel extends Model
 {
-    protected $fakultasModel;
+    protected $table = 'fakultas';
+    protected $primaryKey = 'id_fakultas';
+    protected $allowedFields = ['kd_fakultas', 'nama_fakultas', 'id_ruangan', 'id_prodi'];
 
-    function __construct()
+    function countFakultasData()
     {
-        $this->fakultasModel = new FakultasModel();
+        return $this->countAllResults();
+    }
+
+    function generateKodeFakultas()
+    {
+        $lastKode = $this->orderBy('id_fakultas', 'DESC')->first();
+
+        if ($lastKode) {
+            $getKode = $lastKode['kd_fakultas'];
+            $lastNumKode = intval(substr($getKode, -003));
+            $newNumKode = $lastNumKode + 1;
+            $newKodeFakultas = 'F017' . str_pad($newNumKode, 3, '0', STR_PAD_LEFT);
+        } else {
+            $newKodeFakultas = 'F017001';
+        }
+
+        return $newKodeFakultas;
     }
 
 
-    public function index()
+    function getData()
     {
-
-        //get Ruangan Data
-        $ruanganModel = new RuanganModel();
-        $fakultas['ruangan'] = $ruanganModel->findAll();
-
-        //get All Data
-        $fakultas['title'] = 'Fakultas';
-        $fakultas['fakultas'] = $this->fakultasModel->getData();
-        $fakultas['json'] = json_encode(
-            array(
-                'fakultas' => $fakultas['fakultas']
-            )
-        );
-        return view('fakultas/index', $fakultas);
-    }
-
-    function createNewFakultas()
-    {
-
-        $fakultas['fakultas'] = $this->fakultasModel->getData();
-        $newKodeFakultas = $this->fakultasModel->generateKodeFakultas();
-        $data = [
-            'nama_fakultas' => $this->request->getPost('nama_fakultas'),
-            'kd_fakultas' => $newKodeFakultas,
-            'id_ruangan' => $this->request->getPost('id_ruangan')
-        ];
-        $this->fakultasModel->insert($data);
-        return redirect()->to('/fakultas');
-    }
-
-    // public function getJson()
-    // {
-    //     $fakultasModel = new FakultasModel();
-    //     $fakultas = $fakultasModel->findAll();
-
-    //     return $this->response->setJSON($fakultas);
-    // }
-
-    public function create()
-    {
-        $newKodeFakultas = $this->fakultasModel->generateKodeFakultas();
-
-        $this->fakultasModel->insert([
-            'nama' => $this->request->getPost('nama'),
-            'kd_fakultas' => $newKodeFakultas
-        ]);
-
-        return redirect()->to('/fakultas');
-    }
-
-
-
-    public function edit($id)
-    {
-        $data['title'] = "Edit Fakultas";
-        $data['fakultas'] = $this->fakultasModel->find($id);
-
-        return view('fakultas/edit', $data);
-    }
-
-    public function update($id)
-    {
-
-        $data = [
-            'nama' => $this->request->getPost('nama'),
-        ];
-
-        $this->fakultasModel->update($id, $data);
-
-        return redirect()->to('/fakultas');
-    }
-
-    public function delete($id)
-    {
-        $this->fakultasModel->delete($id);
-
-        return redirect()->to('/fakultas');
+        $builder = $this->db->table('fakultas')
+            ->join('ruangan', 'ruangan.id_ruangan = fakultas.id_ruangan')
+            ->join('prodi', 'prodi.id_prodi = fakultas.id_prodi')
+            ->get()->getResult();
+        return $builder;
     }
 }
