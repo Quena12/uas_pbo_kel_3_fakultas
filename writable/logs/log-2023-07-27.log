@@ -344,3 +344,377 @@ in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
 11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
 12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
 13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\MUHAMMAD FAISHAL\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+CRITICAL - 2023-07-27 04:18:29 --> syntax error, unexpected '<<' (T_SL), expecting function (T_FUNCTION) or const (T_CONST)
+in APPPATH\Models\FakultasModel.php on line 10.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\User\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\app\\Models\\FakultasModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\FakultasModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\FakultasModel')
+ 4 APPPATH\Controllers\Home.php(16): spl_autoload_call('App\\Models\\FakultasModel')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ERROR - 2023-07-27 04:19:50 --> mysqli_sql_exception: Unknown column 'fakultas.id_ruangan' in 'on clause' in C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+#6 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#7 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\D...')
+#11 {main}
+CRITICAL - 2023-07-27 04:19:50 --> Unknown column 'fakultas.id_ruangan' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', [], false)
+ 5 APPPATH\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ERROR - 2023-07-27 04:25:38 --> mysqli_sql_exception: Can't DROP FOREIGN KEY `fakultas_id_ruangan_foreign`; check that it exists in C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('ALTER TABLE `fa...', 0)
+#1 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('ALTER TABLE `fa...')
+#2 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('ALTER TABLE `fa...')
+#3 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\Forge.php(517): CodeIgniter\Database\BaseConnection->query('ALTER TABLE `fa...')
+#4 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Database\Migrations\2023-07-25-072915_FakultasMigration.php(47): CodeIgniter\Database\Forge->dropForeignKey('fakultas', 'fakultas_id_rua...')
+#5 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MigrationRunner.php(877): App\Database\Migrations\FakultasMigration->down()
+#6 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MigrationRunner.php(299): CodeIgniter\Database\MigrationRunner->migrate('down', Object(stdClass))
+#7 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Database\MigrateRollback.php(92): CodeIgniter\Database\MigrationRunner->regress(0)
+#8 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRollback->run(Array)
+#9 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CLI\BaseCommand.php(114): CodeIgniter\CLI\Commands->run('migrate:rollbac...', Array)
+#10 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Database\MigrateRefresh.php(84): CodeIgniter\CLI\BaseCommand->call('migrate:rollbac...', Array)
+#11 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\spark(97): CodeIgniter\CLI\Console->run()
+#14 {main}
+ERROR - 2023-07-27 04:28:59 --> mysqli_sql_exception: Unknown column 'fakultas.id_ruangan' in 'on clause' in C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+#6 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#7 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\D...')
+#11 {main}
+CRITICAL - 2023-07-27 04:28:59 --> Unknown column 'fakultas.id_ruangan' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', [], false)
+ 5 APPPATH\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ERROR - 2023-07-27 04:29:04 --> mysqli_sql_exception: Unknown column 'fakultas.id_ruangan' in 'on clause' in C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+#6 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#7 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\D...')
+#11 {main}
+CRITICAL - 2023-07-27 04:29:04 --> Unknown column 'fakultas.id_ruangan' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `fakultas`
+JOIN `ruangan` ON `ruangan`.`id_ruangan` = `fakultas`.`id_ruangan`
+JOIN `prodi` ON `prodi`.`id_prodi` = `fakultas`.`id_prodi`', [], false)
+ 5 APPPATH\Models\FakultasModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(20): App\Models\FakultasModel->getData()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ERROR - 2023-07-27 04:35:06 --> mysqli_sql_exception: Can't DROP FOREIGN KEY `fakultas_id_ruangan_foreign`; check that it exists in C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('ALTER TABLE `fa...', 0)
+#1 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('ALTER TABLE `fa...')
+#2 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('ALTER TABLE `fa...')
+#3 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\Forge.php(517): CodeIgniter\Database\BaseConnection->query('ALTER TABLE `fa...')
+#4 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Database\Migrations\2023-07-25-072915_FakultasMigration.php(47): CodeIgniter\Database\Forge->dropForeignKey('fakultas', 'fakultas_id_rua...')
+#5 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MigrationRunner.php(877): App\Database\Migrations\FakultasMigration->down()
+#6 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MigrationRunner.php(299): CodeIgniter\Database\MigrationRunner->migrate('down', Object(stdClass))
+#7 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Database\MigrateRollback.php(92): CodeIgniter\Database\MigrationRunner->regress(0)
+#8 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRollback->run(Array)
+#9 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CLI\BaseCommand.php(114): CodeIgniter\CLI\Commands->run('migrate:rollbac...', Array)
+#10 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Database\MigrateRefresh.php(84): CodeIgniter\CLI\BaseCommand->call('migrate:rollbac...', Array)
+#11 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\spark(97): CodeIgniter\CLI\Console->run()
+#14 {main}
+ERROR - 2023-07-27 04:35:44 --> mysqli_sql_exception: Can't DROP FOREIGN KEY `fakultas_id_ruangan_foreign`; check that it exists in C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('ALTER TABLE `fa...', 0)
+#1 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('ALTER TABLE `fa...')
+#2 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('ALTER TABLE `fa...')
+#3 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\Forge.php(517): CodeIgniter\Database\BaseConnection->query('ALTER TABLE `fa...')
+#4 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Database\Migrations\2023-07-25-072915_FakultasMigration.php(47): CodeIgniter\Database\Forge->dropForeignKey('fakultas', 'fakultas_id_rua...')
+#5 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MigrationRunner.php(877): App\Database\Migrations\FakultasMigration->down()
+#6 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MigrationRunner.php(299): CodeIgniter\Database\MigrationRunner->migrate('down', Object(stdClass))
+#7 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Database\MigrateRollback.php(92): CodeIgniter\Database\MigrationRunner->regress(1)
+#8 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRollback->run(Array)
+#9 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate:rollbac...', Array)
+#10 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-07-27 04:37:01 --> mysqli_sql_exception: Can't DROP FOREIGN KEY `fakultas_id_ruangan_foreign`; check that it exists in C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('ALTER TABLE `fa...', 0)
+#1 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('ALTER TABLE `fa...')
+#2 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('ALTER TABLE `fa...')
+#3 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\Forge.php(517): CodeIgniter\Database\BaseConnection->query('ALTER TABLE `fa...')
+#4 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Database\Migrations\2023-07-25-072915_FakultasMigration.php(47): CodeIgniter\Database\Forge->dropForeignKey('fakultas', 'fakultas_id_rua...')
+#5 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MigrationRunner.php(877): App\Database\Migrations\FakultasMigration->down()
+#6 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MigrationRunner.php(299): CodeIgniter\Database\MigrationRunner->migrate('down', Object(stdClass))
+#7 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Database\MigrateRollback.php(92): CodeIgniter\Database\MigrationRunner->regress(1)
+#8 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRollback->run(Array)
+#9 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate:rollbac...', Array)
+#10 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-07-27 04:40:05 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`fakultas`.`fakultas`, CONSTRAINT `fakultas_id_ruangan_foreign` FOREIGN KEY (`id_ruangan`) REFERENCES `ruangan` (`id_ruangan`)) in C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fa...', 0)
+#1 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fa...')
+#2 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fa...')
+#3 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fa...', Array, false)
+#4 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Database\Seeds\FakultasSeeder.php(20): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\Seeder.php(146): App\Database\Seeds\FakultasSeeder->run()
+#6 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#7 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#8 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#9 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\spark(97): CodeIgniter\CLI\Console->run()
+#10 {main}
+ERROR - 2023-07-27 04:41:12 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`fakultas`.`fakultas`, CONSTRAINT `fakultas_id_ruangan_foreign` FOREIGN KEY (`id_ruangan`) REFERENCES `ruangan` (`id_ruangan`)) in C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fa...', 0)
+#1 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fa...')
+#2 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fa...')
+#3 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fa...', Array, false)
+#4 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Database\Seeds\FakultasSeeder.php(20): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\Seeder.php(146): App\Database\Seeds\FakultasSeeder->run()
+#6 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#7 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#8 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#9 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\spark(97): CodeIgniter\CLI\Console->run()
+#10 {main}
+CRITICAL - 2023-07-27 04:42:14 --> Cannot use object of type stdClass as array
+in APPPATH\Views\fakultas\index.php on line 98.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('fakultas/index', [], true)
+ 4 APPPATH\Controllers\Fakultas.php(38): view('fakultas/index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Fakultas->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fakultas))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+CRITICAL - 2023-07-27 04:43:32 --> syntax error, unexpected '<<' (T_SL), expecting function (T_FUNCTION) or const (T_CONST)
+in APPPATH\Controllers\ProdiController.php on line 42.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\User\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\app\\Controllers\\ProdiController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ProdiController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ProdiController')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\ProdiController')
+ 5 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\ProdiController', true)
+ 6 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+INFO - 2023-07-27 04:48:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-27 04:54:51 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`fakultas`.`fakultas`, CONSTRAINT `fakultas_id_prodi_foreign` FOREIGN KEY (`id_prodi`) REFERENCES `prodi` (`id_prodi`)) in C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `pr...', 0)
+#1 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pr...')
+#2 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pr...')
+#3 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pr...', Array, false)
+#4 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Controllers\ProdiController.php(84): CodeIgniter\BaseModel->delete(Array)
+#7 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\prodiController->deleteProdi('1')
+#8 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\prodiController))
+#9 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\D...')
+#12 {main}
+CRITICAL - 2023-07-27 04:54:51 --> Cannot delete or update a parent row: a foreign key constraint fails (`fakultas`.`fakultas`, CONSTRAINT `fakultas_id_prodi_foreign` FOREIGN KEY (`id_prodi`) REFERENCES `prodi` (`id_prodi`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `prodi`
+WHERE `id_prodi` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `prodi`
+WHERE `id_prodi` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `prodi`
+WHERE `id_prodi` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `prodi`
+WHERE `id_prodi` IN :id_prodi:', [...], false)
+ 5 SYSTEMPATH\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\ProdiController.php(84): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\prodiController->deleteProdi('1')
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\prodiController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ERROR - 2023-07-27 04:55:15 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`fakultas`.`fakultas`, CONSTRAINT `fakultas_id_prodi_foreign` FOREIGN KEY (`id_prodi`) REFERENCES `prodi` (`id_prodi`)) in C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `pr...', 0)
+#1 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pr...')
+#2 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pr...')
+#3 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pr...', Array, false)
+#4 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Controllers\ProdiController.php(84): CodeIgniter\BaseModel->delete(Array)
+#7 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\prodiController->deleteProdi('1')
+#8 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\prodiController))
+#9 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\D...')
+#12 {main}
+CRITICAL - 2023-07-27 04:55:15 --> Cannot delete or update a parent row: a foreign key constraint fails (`fakultas`.`fakultas`, CONSTRAINT `fakultas_id_prodi_foreign` FOREIGN KEY (`id_prodi`) REFERENCES `prodi` (`id_prodi`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `prodi`
+WHERE `id_prodi` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `prodi`
+WHERE `id_prodi` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `prodi`
+WHERE `id_prodi` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `prodi`
+WHERE `id_prodi` IN :id_prodi:', [...], false)
+ 5 SYSTEMPATH\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\ProdiController.php(84): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\prodiController->deleteProdi('1')
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\prodiController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+ERROR - 2023-07-27 04:55:29 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`fakultas`.`fakultas`, CONSTRAINT `fakultas_id_prodi_foreign` FOREIGN KEY (`id_prodi`) REFERENCES `prodi` (`id_prodi`)) in C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `pr...', 0)
+#1 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pr...')
+#2 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pr...')
+#3 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pr...', Array, false)
+#4 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Controllers\ProdiController.php(84): CodeIgniter\BaseModel->delete(Array)
+#7 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\prodiController->deleteProdi('1')
+#8 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\prodiController))
+#9 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\D...')
+#12 {main}
+CRITICAL - 2023-07-27 04:55:29 --> Cannot delete or update a parent row: a foreign key constraint fails (`fakultas`.`fakultas`, CONSTRAINT `fakultas_id_prodi_foreign` FOREIGN KEY (`id_prodi`) REFERENCES `prodi` (`id_prodi`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `prodi`
+WHERE `id_prodi` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `prodi`
+WHERE `id_prodi` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `prodi`
+WHERE `id_prodi` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `prodi`
+WHERE `id_prodi` IN :id_prodi:', [...], false)
+ 5 SYSTEMPATH\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\ProdiController.php(84): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\prodiController->deleteProdi('1')
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\prodiController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+INFO - 2023-07-27 04:56:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-27 04:56:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-27 04:56:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-27 04:56:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-27 04:59:45 --> mysqli_sql_exception: Column 'id_prodi' cannot be null in C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fa...', 0)
+#1 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fa...')
+#2 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fa...')
+#3 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fa...', Array, false)
+#4 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\app\Controllers\Fakultas.php(50): CodeIgniter\Model->insert(Array)
+#8 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(932): App\Controllers\Fakultas->createNewFakultas()
+#9 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fakultas))
+#10 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\User\Documents\GitHub\uas_pbo_kel_3_fakultas\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\D...')
+#13 {main}
+CRITICAL - 2023-07-27 04:59:45 --> Column 'id_prodi' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`, `id_prodi`) VALUES (\'F017001\', \'Teknologi Informasi\', \'2\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`, `id_prodi`) VALUES (\'F017001\', \'Teknologi Informasi\', \'2\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`, `id_prodi`) VALUES (\'F017001\', \'Teknologi Informasi\', \'2\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fakultas` (`kd_fakultas`, `nama_fakultas`, `id_ruangan`, `id_prodi`) VALUES (:kd_fakultas:, :nama_fakultas:, :id_ruangan:, :id_prodi:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Fakultas.php(50): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Fakultas->createNewFakultas()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fakultas))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\User\\Documents\\GitHub\\uas_pbo_kel_3_fakultas\\public\\index.php')
+INFO - 2023-07-27 05:04:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
