@@ -8,7 +8,7 @@ class ProdiModel extends Model
 {
     protected $table = 'prodi';
     protected $primaryKey = 'id_prodi';
-    protected $allowedFields = ['kd_prodi', 'nama_prodi'];
+    protected $allowedFields  = ['kd_prodi', 'nama_prodi'];
 
     function countProdiData()
     {
@@ -23,12 +23,12 @@ class ProdiModel extends Model
             $getKode = $lastKode['kd_prodi'];
             $lastNumKode = intval(substr($getKode, -003));
             $newNumKode = $lastNumKode + 1;
-            $newKodeProdi = 'P017' . str_pad($newNumKode, 3, '0', STR_PAD_LEFT);
+            $newKode = 'R017' . str_pad($newNumKode, 3, '0', STR_PAD_LEFT);
         } else {
-            $newKodeProdi = 'P017001';
+            $newKode = 'R017001';
         }
 
-        return $newKodeProdi;
+        return $newKode;
     }
 
     protected $belongsTo = [
