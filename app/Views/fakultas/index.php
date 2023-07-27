@@ -45,7 +45,7 @@
                                     </div>
                                     <div class="col-md-8">
                                         <div class="form-group">
-                                            <select class="choices form-select multiple-remove" multiple="multiple" name="id_prodi">
+                                            <select class="choices form-select multiple-remove" multiple="multiple" name="id_prodi[]">
                                                 <?php foreach ($prodi as $key) : ?>
                                                     <option value="<?= $key['id_prodi'] ?>"><?= $key['nama_prodi'] ?></option>
                                                 <?php endforeach; ?>
@@ -94,10 +94,15 @@
                                 <?php foreach ($fakultas as $fakultas) : ?>
                                     <tr>
                                         <td><?= $no++ ?></td>
+<<<<<<< HEAD
+                                        <td><?= $fakultas['kd_fakultas']; ?></td>
+                                        <td><?= $fakultas['nama_fakultas']; ?></td>
+=======
                                         <td><?= $fakultas->kd_fakultas; ?></td>
                                         <td><?= $fakultas->nama_fakultas; ?></td>
                                         <td><?= $fakultas->nama_ruangan; ?></td>
                                         <td><?= $fakultas->nama_prodi; ?></td>
+>>>>>>> origin/alfin
                                         <td>
                                             <!-- Tambahkan tombol edit dan delete -->
                                             <a href="/fakultas/editfakultas/<?= $fakultas->id_fakultas; ?>" class="btn btn-sm btn-primary">Edit</a>
